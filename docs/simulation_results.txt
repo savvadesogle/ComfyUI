@@ -14,1069 +14,1265 @@ SD1.5 CLIP fp32      clean (nothing loaded)             4     8    3.5      6   
 SD1.5 CLIP fp32      clean (nothing loaded)             4    16    3.5     13   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)             4    32    3.5     26   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)             4    64    3.5     51   CPU   GPU  <
+SD1.5 CLIP fp32      clean (nothing loaded)             4    96    3.5     77   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)             4   128    3.5    102   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)             4   256    3.5    205   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)             6     8    5.5      6   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)             6    16    5.5     13   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)             6    32    5.5     26   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)             6    64    5.5     51   CPU   GPU  <
+SD1.5 CLIP fp32      clean (nothing loaded)             6    96    5.5     77   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)             6   128    5.5    102   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)             6   256    5.5    205   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)             8     8    7.5      6   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)             8    16    7.5     13   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)             8    32    7.5     26   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)             8    64    7.5     51   CPU   GPU  <
+SD1.5 CLIP fp32      clean (nothing loaded)             8    96    7.5     77   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)             8   128    7.5    102   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)             8   256    7.5    205   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)            12     8   11.5      6   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)            12    16   11.5     13   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)            12    32   11.5     26   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)            12    64   11.5     51   CPU   GPU  <
+SD1.5 CLIP fp32      clean (nothing loaded)            12    96   11.5     77   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)            12   128   11.5    102   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)            12   256   11.5    205   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)            16     8   15.5      6   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)            16    16   15.5     13   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)            16    32   15.5     26   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)            16    64   15.5     51   CPU   GPU  <
+SD1.5 CLIP fp32      clean (nothing loaded)            16    96   15.5     77   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)            16   128   15.5    102   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)            16   256   15.5    205   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)            20     8   19.5      6   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)            20    16   19.5     13   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)            20    32   19.5     26   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)            20    64   19.5     51   CPU   GPU  <
+SD1.5 CLIP fp32      clean (nothing loaded)            20    96   19.5     77   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)            20   128   19.5    102   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)            20   256   19.5    205   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)            24     8   23.5      6   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)            24    16   23.5     13   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)            24    32   23.5     26   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)            24    64   23.5     51   CPU   GPU  <
+SD1.5 CLIP fp32      clean (nothing loaded)            24    96   23.5     77   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)            24   128   23.5    102   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)            24   256   23.5    205   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)            32     8   31.5      6   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)            32    16   31.5     13   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)            32    32   31.5     26   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)            32    64   31.5     51   GPU   GPU 
+SD1.5 CLIP fp32      clean (nothing loaded)            32    96   31.5     77   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)            32   128   31.5    102   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)            32   256   31.5    205   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)            48     8   47.5      6   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)            48    16   47.5     13   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)            48    32   47.5     26   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)            48    64   47.5     51   GPU   GPU 
+SD1.5 CLIP fp32      clean (nothing loaded)            48    96   47.5     77   GPU   GPU 
 SD1.5 CLIP fp32      clean (nothing loaded)            48   128   47.5    102   CPU   GPU  <
 SD1.5 CLIP fp32      clean (nothing loaded)            48   256   47.5    205   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)           8     8    0.5      6   CPU   CPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)           8    16    0.5     13   CPU   CPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)           8    32    0.5     26   CPU   CPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)           8    64    0.5     51   CPU   CPU 
+SD1.5 CLIP fp32      + small diffusion (7 GB)           8    96    0.5     77   CPU   CPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)           8   128    0.5    102   CPU   CPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)           8   256    0.5    205   CPU   CPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)          12     8    4.5      6   GPU   GPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)          12    16    4.5     13   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          12    32    4.5     26   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          12    64    4.5     51   CPU   GPU  <
+SD1.5 CLIP fp32      + small diffusion (7 GB)          12    96    4.5     77   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          12   128    4.5    102   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          12   256    4.5    205   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          16     8    8.5      6   GPU   GPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)          16    16    8.5     13   GPU   GPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)          16    32    8.5     26   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          16    64    8.5     51   CPU   GPU  <
+SD1.5 CLIP fp32      + small diffusion (7 GB)          16    96    8.5     77   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          16   128    8.5    102   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          16   256    8.5    205   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          20     8   12.5      6   GPU   GPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)          20    16   12.5     13   GPU   GPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)          20    32   12.5     26   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          20    64   12.5     51   CPU   GPU  <
+SD1.5 CLIP fp32      + small diffusion (7 GB)          20    96   12.5     77   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          20   128   12.5    102   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          20   256   12.5    205   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          24     8   16.5      6   GPU   GPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)          24    16   16.5     13   GPU   GPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)          24    32   16.5     26   GPU   GPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)          24    64   16.5     51   CPU   GPU  <
+SD1.5 CLIP fp32      + small diffusion (7 GB)          24    96   16.5     77   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          24   128   16.5    102   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          24   256   16.5    205   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          32     8   24.5      6   GPU   GPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)          32    16   24.5     13   GPU   GPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)          32    32   24.5     26   GPU   GPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)          32    64   24.5     51   CPU   GPU  <
+SD1.5 CLIP fp32      + small diffusion (7 GB)          32    96   24.5     77   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          32   128   24.5    102   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          32   256   24.5    205   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          48     8   40.5      6   GPU   GPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)          48    16   40.5     13   GPU   GPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)          48    32   40.5     26   GPU   GPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)          48    64   40.5     51   GPU   GPU 
+SD1.5 CLIP fp32      + small diffusion (7 GB)          48    96   40.5     77   GPU   GPU 
 SD1.5 CLIP fp32      + small diffusion (7 GB)          48   128   40.5    102   CPU   GPU  <
 SD1.5 CLIP fp32      + small diffusion (7 GB)          48   256   40.5    205   CPU   GPU  <
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               16     8    3.8      6   GPU   GPU 
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               16    16    3.8     13   CPU   GPU  <
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               16    32    3.8     26   CPU   GPU  <
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               16    64    3.8     51   CPU   GPU  <
+SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               16    96    3.8     77   CPU   GPU  <
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               16   128    3.8    102   CPU   GPU  <
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               16   256    3.8    205   CPU   GPU  <
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               20     8    7.8      6   GPU   GPU 
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               20    16    7.8     13   GPU   GPU 
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               20    32    7.8     26   CPU   GPU  <
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               20    64    7.8     51   CPU   GPU  <
+SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               20    96    7.8     77   CPU   GPU  <
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               20   128    7.8    102   CPU   GPU  <
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               20   256    7.8    205   CPU   GPU  <
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               24     8   11.8      6   GPU   GPU 
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               24    16   11.8     13   GPU   GPU 
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               24    32   11.8     26   CPU   GPU  <
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               24    64   11.8     51   CPU   GPU  <
+SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               24    96   11.8     77   CPU   GPU  <
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               24   128   11.8    102   CPU   GPU  <
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               24   256   11.8    205   CPU   GPU  <
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               32     8   19.8      6   GPU   GPU 
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               32    16   19.8     13   GPU   GPU 
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               32    32   19.8     26   GPU   GPU 
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               32    64   19.8     51   CPU   GPU  <
+SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               32    96   19.8     77   CPU   GPU  <
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               32   128   19.8    102   CPU   GPU  <
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               32   256   19.8    205   CPU   GPU  <
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               48     8   35.8      6   GPU   GPU 
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               48    16   35.8     13   GPU   GPU 
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               48    32   35.8     26   GPU   GPU 
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               48    64   35.8     51   GPU   GPU 
+SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               48    96   35.8     77   CPU   GPU  <
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               48   128   35.8    102   CPU   GPU  <
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               48   256   35.8    205   CPU   GPU  <
 SD1.5 CLIP fp32      + large model (15 GB)             16     8    0.5      6   CPU   CPU 
 SD1.5 CLIP fp32      + large model (15 GB)             16    16    0.5     13   CPU   CPU 
 SD1.5 CLIP fp32      + large model (15 GB)             16    32    0.5     26   CPU   CPU 
 SD1.5 CLIP fp32      + large model (15 GB)             16    64    0.5     51   CPU   CPU 
+SD1.5 CLIP fp32      + large model (15 GB)             16    96    0.5     77   CPU   CPU 
 SD1.5 CLIP fp32      + large model (15 GB)             16   128    0.5    102   CPU   CPU 
 SD1.5 CLIP fp32      + large model (15 GB)             16   256    0.5    205   CPU   CPU 
 SD1.5 CLIP fp32      + large model (15 GB)             20     8    4.5      6   GPU   GPU 
 SD1.5 CLIP fp32      + large model (15 GB)             20    16    4.5     13   CPU   GPU  <
 SD1.5 CLIP fp32      + large model (15 GB)             20    32    4.5     26   CPU   GPU  <
 SD1.5 CLIP fp32      + large model (15 GB)             20    64    4.5     51   CPU   GPU  <
+SD1.5 CLIP fp32      + large model (15 GB)             20    96    4.5     77   CPU   GPU  <
 SD1.5 CLIP fp32      + large model (15 GB)             20   128    4.5    102   CPU   GPU  <
 SD1.5 CLIP fp32      + large model (15 GB)             20   256    4.5    205   CPU   GPU  <
 SD1.5 CLIP fp32      + large model (15 GB)             24     8    8.5      6   GPU   GPU 
 SD1.5 CLIP fp32      + large model (15 GB)             24    16    8.5     13   GPU   GPU 
 SD1.5 CLIP fp32      + large model (15 GB)             24    32    8.5     26   CPU   GPU  <
 SD1.5 CLIP fp32      + large model (15 GB)             24    64    8.5     51   CPU   GPU  <
+SD1.5 CLIP fp32      + large model (15 GB)             24    96    8.5     77   CPU   GPU  <
 SD1.5 CLIP fp32      + large model (15 GB)             24   128    8.5    102   CPU   GPU  <
 SD1.5 CLIP fp32      + large model (15 GB)             24   256    8.5    205   CPU   GPU  <
 SD1.5 CLIP fp32      + large model (15 GB)             32     8   16.5      6   GPU   GPU 
 SD1.5 CLIP fp32      + large model (15 GB)             32    16   16.5     13   GPU   GPU 
 SD1.5 CLIP fp32      + large model (15 GB)             32    32   16.5     26   GPU   GPU 
 SD1.5 CLIP fp32      + large model (15 GB)             32    64   16.5     51   CPU   GPU  <
+SD1.5 CLIP fp32      + large model (15 GB)             32    96   16.5     77   CPU   GPU  <
 SD1.5 CLIP fp32      + large model (15 GB)             32   128   16.5    102   CPU   GPU  <
 SD1.5 CLIP fp32      + large model (15 GB)             32   256   16.5    205   CPU   GPU  <
 SD1.5 CLIP fp32      + large model (15 GB)             48     8   32.5      6   GPU   GPU 
 SD1.5 CLIP fp32      + large model (15 GB)             48    16   32.5     13   GPU   GPU 
 SD1.5 CLIP fp32      + large model (15 GB)             48    32   32.5     26   GPU   GPU 
 SD1.5 CLIP fp32      + large model (15 GB)             48    64   32.5     51   GPU   GPU 
+SD1.5 CLIP fp32      + large model (15 GB)             48    96   32.5     77   CPU   GPU  <
 SD1.5 CLIP fp32      + large model (15 GB)             48   128   32.5    102   CPU   GPU  <
 SD1.5 CLIP fp32      + large model (15 GB)             48   256   32.5    205   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)             4     8    3.5      6   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)             4    16    3.5     13   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)             4    32    3.5     26   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)             4    64    3.5     51   CPU   GPU  <
+SDXL CLIP            clean (nothing loaded)             4    96    3.5     77   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)             4   128    3.5    102   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)             4   256    3.5    205   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)             6     8    5.5      6   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)             6    16    5.5     13   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)             6    32    5.5     26   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)             6    64    5.5     51   CPU   GPU  <
+SDXL CLIP            clean (nothing loaded)             6    96    5.5     77   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)             6   128    5.5    102   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)             6   256    5.5    205   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)             8     8    7.5      6   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)             8    16    7.5     13   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)             8    32    7.5     26   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)             8    64    7.5     51   CPU   GPU  <
+SDXL CLIP            clean (nothing loaded)             8    96    7.5     77   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)             8   128    7.5    102   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)             8   256    7.5    205   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)            12     8   11.5      6   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)            12    16   11.5     13   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)            12    32   11.5     26   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)            12    64   11.5     51   CPU   GPU  <
+SDXL CLIP            clean (nothing loaded)            12    96   11.5     77   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)            12   128   11.5    102   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)            12   256   11.5    205   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)            16     8   15.5      6   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)            16    16   15.5     13   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)            16    32   15.5     26   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)            16    64   15.5     51   CPU   GPU  <
+SDXL CLIP            clean (nothing loaded)            16    96   15.5     77   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)            16   128   15.5    102   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)            16   256   15.5    205   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)            20     8   19.5      6   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)            20    16   19.5     13   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)            20    32   19.5     26   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)            20    64   19.5     51   CPU   GPU  <
+SDXL CLIP            clean (nothing loaded)            20    96   19.5     77   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)            20   128   19.5    102   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)            20   256   19.5    205   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)            24     8   23.5      6   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)            24    16   23.5     13   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)            24    32   23.5     26   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)            24    64   23.5     51   CPU   GPU  <
+SDXL CLIP            clean (nothing loaded)            24    96   23.5     77   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)            24   128   23.5    102   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)            24   256   23.5    205   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)            32     8   31.5      6   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)            32    16   31.5     13   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)            32    32   31.5     26   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)            32    64   31.5     51   GPU   GPU 
+SDXL CLIP            clean (nothing loaded)            32    96   31.5     77   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)            32   128   31.5    102   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)            32   256   31.5    205   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)            48     8   47.5      6   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)            48    16   47.5     13   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)            48    32   47.5     26   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)            48    64   47.5     51   GPU   GPU 
+SDXL CLIP            clean (nothing loaded)            48    96   47.5     77   GPU   GPU 
 SDXL CLIP            clean (nothing loaded)            48   128   47.5    102   CPU   GPU  <
 SDXL CLIP            clean (nothing loaded)            48   256   47.5    205   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)           8     8    0.5      6   CPU   CPU 
 SDXL CLIP            + small diffusion (7 GB)           8    16    0.5     13   CPU   CPU 
 SDXL CLIP            + small diffusion (7 GB)           8    32    0.5     26   CPU   CPU 
 SDXL CLIP            + small diffusion (7 GB)           8    64    0.5     51   CPU   CPU 
+SDXL CLIP            + small diffusion (7 GB)           8    96    0.5     77   CPU   CPU 
 SDXL CLIP            + small diffusion (7 GB)           8   128    0.5    102   CPU   CPU 
 SDXL CLIP            + small diffusion (7 GB)           8   256    0.5    205   CPU   CPU 
 SDXL CLIP            + small diffusion (7 GB)          12     8    4.5      6   GPU   GPU 
 SDXL CLIP            + small diffusion (7 GB)          12    16    4.5     13   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          12    32    4.5     26   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          12    64    4.5     51   CPU   GPU  <
+SDXL CLIP            + small diffusion (7 GB)          12    96    4.5     77   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          12   128    4.5    102   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          12   256    4.5    205   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          16     8    8.5      6   GPU   GPU 
 SDXL CLIP            + small diffusion (7 GB)          16    16    8.5     13   GPU   GPU 
 SDXL CLIP            + small diffusion (7 GB)          16    32    8.5     26   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          16    64    8.5     51   CPU   GPU  <
+SDXL CLIP            + small diffusion (7 GB)          16    96    8.5     77   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          16   128    8.5    102   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          16   256    8.5    205   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          20     8   12.5      6   GPU   GPU 
 SDXL CLIP            + small diffusion (7 GB)          20    16   12.5     13   GPU   GPU 
 SDXL CLIP            + small diffusion (7 GB)          20    32   12.5     26   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          20    64   12.5     51   CPU   GPU  <
+SDXL CLIP            + small diffusion (7 GB)          20    96   12.5     77   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          20   128   12.5    102   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          20   256   12.5    205   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          24     8   16.5      6   GPU   GPU 
 SDXL CLIP            + small diffusion (7 GB)          24    16   16.5     13   GPU   GPU 
 SDXL CLIP            + small diffusion (7 GB)          24    32   16.5     26   GPU   GPU 
 SDXL CLIP            + small diffusion (7 GB)          24    64   16.5     51   CPU   GPU  <
+SDXL CLIP            + small diffusion (7 GB)          24    96   16.5     77   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          24   128   16.5    102   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          24   256   16.5    205   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          32     8   24.5      6   GPU   GPU 
 SDXL CLIP            + small diffusion (7 GB)          32    16   24.5     13   GPU   GPU 
 SDXL CLIP            + small diffusion (7 GB)          32    32   24.5     26   GPU   GPU 
 SDXL CLIP            + small diffusion (7 GB)          32    64   24.5     51   CPU   GPU  <
+SDXL CLIP            + small diffusion (7 GB)          32    96   24.5     77   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          32   128   24.5    102   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          32   256   24.5    205   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          48     8   40.5      6   GPU   GPU 
 SDXL CLIP            + small diffusion (7 GB)          48    16   40.5     13   GPU   GPU 
 SDXL CLIP            + small diffusion (7 GB)          48    32   40.5     26   GPU   GPU 
 SDXL CLIP            + small diffusion (7 GB)          48    64   40.5     51   GPU   GPU 
+SDXL CLIP            + small diffusion (7 GB)          48    96   40.5     77   GPU   GPU 
 SDXL CLIP            + small diffusion (7 GB)          48   128   40.5    102   CPU   GPU  <
 SDXL CLIP            + small diffusion (7 GB)          48   256   40.5    205   CPU   GPU  <
 SDXL CLIP            + Lumina2 (11.7 GB)               16     8    3.8      6   GPU   GPU 
 SDXL CLIP            + Lumina2 (11.7 GB)               16    16    3.8     13   CPU   GPU  <
 SDXL CLIP            + Lumina2 (11.7 GB)               16    32    3.8     26   CPU   GPU  <
 SDXL CLIP            + Lumina2 (11.7 GB)               16    64    3.8     51   CPU   GPU  <
+SDXL CLIP            + Lumina2 (11.7 GB)               16    96    3.8     77   CPU   GPU  <
 SDXL CLIP            + Lumina2 (11.7 GB)               16   128    3.8    102   CPU   GPU  <
 SDXL CLIP            + Lumina2 (11.7 GB)               16   256    3.8    205   CPU   GPU  <
 SDXL CLIP            + Lumina2 (11.7 GB)               20     8    7.8      6   GPU   GPU 
 SDXL CLIP            + Lumina2 (11.7 GB)               20    16    7.8     13   GPU   GPU 
 SDXL CLIP            + Lumina2 (11.7 GB)               20    32    7.8     26   CPU   GPU  <
 SDXL CLIP            + Lumina2 (11.7 GB)               20    64    7.8     51   CPU   GPU  <
+SDXL CLIP            + Lumina2 (11.7 GB)               20    96    7.8     77   CPU   GPU  <
 SDXL CLIP            + Lumina2 (11.7 GB)               20   128    7.8    102   CPU   GPU  <
 SDXL CLIP            + Lumina2 (11.7 GB)               20   256    7.8    205   CPU   GPU  <
 SDXL CLIP            + Lumina2 (11.7 GB)               24     8   11.8      6   GPU   GPU 
 SDXL CLIP            + Lumina2 (11.7 GB)               24    16   11.8     13   GPU   GPU 
 SDXL CLIP            + Lumina2 (11.7 GB)               24    32   11.8     26   CPU   GPU  <
 SDXL CLIP            + Lumina2 (11.7 GB)               24    64   11.8     51   CPU   GPU  <
+SDXL CLIP            + Lumina2 (11.7 GB)               24    96   11.8     77   CPU   GPU  <
 SDXL CLIP            + Lumina2 (11.7 GB)               24   128   11.8    102   CPU   GPU  <
 SDXL CLIP            + Lumina2 (11.7 GB)               24   256   11.8    205   CPU   GPU  <
 SDXL CLIP            + Lumina2 (11.7 GB)               32     8   19.8      6   GPU   GPU 
 SDXL CLIP            + Lumina2 (11.7 GB)               32    16   19.8     13   GPU   GPU 
 SDXL CLIP            + Lumina2 (11.7 GB)               32    32   19.8     26   GPU   GPU 
 SDXL CLIP            + Lumina2 (11.7 GB)               32    64   19.8     51   CPU   GPU  <
+SDXL CLIP            + Lumina2 (11.7 GB)               32    96   19.8     77   CPU   GPU  <
 SDXL CLIP            + Lumina2 (11.7 GB)               32   128   19.8    102   CPU   GPU  <
 SDXL CLIP            + Lumina2 (11.7 GB)               32   256   19.8    205   CPU   GPU  <
 SDXL CLIP            + Lumina2 (11.7 GB)               48     8   35.8      6   GPU   GPU 
 SDXL CLIP            + Lumina2 (11.7 GB)               48    16   35.8     13   GPU   GPU 
 SDXL CLIP            + Lumina2 (11.7 GB)               48    32   35.8     26   GPU   GPU 
 SDXL CLIP            + Lumina2 (11.7 GB)               48    64   35.8     51   GPU   GPU 
+SDXL CLIP            + Lumina2 (11.7 GB)               48    96   35.8     77   CPU   GPU  <
 SDXL CLIP            + Lumina2 (11.7 GB)               48   128   35.8    102   CPU   GPU  <
 SDXL CLIP            + Lumina2 (11.7 GB)               48   256   35.8    205   CPU   GPU  <
 SDXL CLIP            + large model (15 GB)             16     8    0.5      6   CPU   CPU 
 SDXL CLIP            + large model (15 GB)             16    16    0.5     13   CPU   CPU 
 SDXL CLIP            + large model (15 GB)             16    32    0.5     26   CPU   CPU 
 SDXL CLIP            + large model (15 GB)             16    64    0.5     51   CPU   CPU 
+SDXL CLIP            + large model (15 GB)             16    96    0.5     77   CPU   CPU 
 SDXL CLIP            + large model (15 GB)             16   128    0.5    102   CPU   CPU 
 SDXL CLIP            + large model (15 GB)             16   256    0.5    205   CPU   CPU 
 SDXL CLIP            + large model (15 GB)             20     8    4.5      6   GPU   GPU 
 SDXL CLIP            + large model (15 GB)             20    16    4.5     13   CPU   GPU  <
 SDXL CLIP            + large model (15 GB)             20    32    4.5     26   CPU   GPU  <
 SDXL CLIP            + large model (15 GB)             20    64    4.5     51   CPU   GPU  <
+SDXL CLIP            + large model (15 GB)             20    96    4.5     77   CPU   GPU  <
 SDXL CLIP            + large model (15 GB)             20   128    4.5    102   CPU   GPU  <
 SDXL CLIP            + large model (15 GB)             20   256    4.5    205   CPU   GPU  <
 SDXL CLIP            + large model (15 GB)             24     8    8.5      6   GPU   GPU 
 SDXL CLIP            + large model (15 GB)             24    16    8.5     13   GPU   GPU 
 SDXL CLIP            + large model (15 GB)             24    32    8.5     26   CPU   GPU  <
 SDXL CLIP            + large model (15 GB)             24    64    8.5     51   CPU   GPU  <
+SDXL CLIP            + large model (15 GB)             24    96    8.5     77   CPU   GPU  <
 SDXL CLIP            + large model (15 GB)             24   128    8.5    102   CPU   GPU  <
 SDXL CLIP            + large model (15 GB)             24   256    8.5    205   CPU   GPU  <
 SDXL CLIP            + large model (15 GB)             32     8   16.5      6   GPU   GPU 
 SDXL CLIP            + large model (15 GB)             32    16   16.5     13   GPU   GPU 
 SDXL CLIP            + large model (15 GB)             32    32   16.5     26   GPU   GPU 
 SDXL CLIP            + large model (15 GB)             32    64   16.5     51   CPU   GPU  <
+SDXL CLIP            + large model (15 GB)             32    96   16.5     77   CPU   GPU  <
 SDXL CLIP            + large model (15 GB)             32   128   16.5    102   CPU   GPU  <
 SDXL CLIP            + large model (15 GB)             32   256   16.5    205   CPU   GPU  <
 SDXL CLIP            + large model (15 GB)             48     8   32.5      6   GPU   GPU 
 SDXL CLIP            + large model (15 GB)             48    16   32.5     13   GPU   GPU 
 SDXL CLIP            + large model (15 GB)             48    32   32.5     26   GPU   GPU 
 SDXL CLIP            + large model (15 GB)             48    64   32.5     51   GPU   GPU 
+SDXL CLIP            + large model (15 GB)             48    96   32.5     77   CPU   GPU  <
 SDXL CLIP            + large model (15 GB)             48   128   32.5    102   CPU   GPU  <
 SDXL CLIP            + large model (15 GB)             48   256   32.5    205   CPU   GPU  <
 Qwen3-4B fp16        clean (nothing loaded)             4     8    3.5      6   CPU   CPU 
 Qwen3-4B fp16        clean (nothing loaded)             4    16    3.5     13   CPU   CPU 
 Qwen3-4B fp16        clean (nothing loaded)             4    32    3.5     26   CPU   CPU 
 Qwen3-4B fp16        clean (nothing loaded)             4    64    3.5     51   CPU   CPU 
+Qwen3-4B fp16        clean (nothing loaded)             4    96    3.5     77   CPU   CPU 
 Qwen3-4B fp16        clean (nothing loaded)             4   128    3.5    102   CPU   CPU 
 Qwen3-4B fp16        clean (nothing loaded)             4   256    3.5    205   CPU   CPU 
 Qwen3-4B fp16        clean (nothing loaded)             6     8    5.5      6   CPU   CPU 
 Qwen3-4B fp16        clean (nothing loaded)             6    16    5.5     13   CPU   CPU 
 Qwen3-4B fp16        clean (nothing loaded)             6    32    5.5     26   CPU   CPU 
 Qwen3-4B fp16        clean (nothing loaded)             6    64    5.5     51   CPU   CPU 
+Qwen3-4B fp16        clean (nothing loaded)             6    96    5.5     77   CPU   CPU 
 Qwen3-4B fp16        clean (nothing loaded)             6   128    5.5    102   CPU   CPU 
 Qwen3-4B fp16        clean (nothing loaded)             6   256    5.5    205   CPU   CPU 
 Qwen3-4B fp16        clean (nothing loaded)             8     8    7.5      6   CPU   CPU 
 Qwen3-4B fp16        clean (nothing loaded)             8    16    7.5     13   CPU   CPU 
 Qwen3-4B fp16        clean (nothing loaded)             8    32    7.5     26   CPU   CPU 
 Qwen3-4B fp16        clean (nothing loaded)             8    64    7.5     51   CPU   CPU 
+Qwen3-4B fp16        clean (nothing loaded)             8    96    7.5     77   CPU   CPU 
 Qwen3-4B fp16        clean (nothing loaded)             8   128    7.5    102   CPU   CPU 
 Qwen3-4B fp16        clean (nothing loaded)             8   256    7.5    205   CPU   CPU 
 Qwen3-4B fp16        clean (nothing loaded)            12     8   11.5      6   GPU   GPU 
 Qwen3-4B fp16        clean (nothing loaded)            12    16   11.5     13   GPU   GPU 
 Qwen3-4B fp16        clean (nothing loaded)            12    32   11.5     26   CPU   GPU  <
 Qwen3-4B fp16        clean (nothing loaded)            12    64   11.5     51   CPU   GPU  <
+Qwen3-4B fp16        clean (nothing loaded)            12    96   11.5     77   CPU   GPU  <
 Qwen3-4B fp16        clean (nothing loaded)            12   128   11.5    102   CPU   GPU  <
 Qwen3-4B fp16        clean (nothing loaded)            12   256   11.5    205   CPU   GPU  <
 Qwen3-4B fp16        clean (nothing loaded)            16     8   15.5      6   GPU   GPU 
 Qwen3-4B fp16        clean (nothing loaded)            16    16   15.5     13   GPU   GPU 
 Qwen3-4B fp16        clean (nothing loaded)            16    32   15.5     26   GPU   GPU 
 Qwen3-4B fp16        clean (nothing loaded)            16    64   15.5     51   CPU   GPU  <
+Qwen3-4B fp16        clean (nothing loaded)            16    96   15.5     77   CPU   GPU  <
 Qwen3-4B fp16        clean (nothing loaded)            16   128   15.5    102   CPU   GPU  <
 Qwen3-4B fp16        clean (nothing loaded)            16   256   15.5    205   CPU   GPU  <
 Qwen3-4B fp16        clean (nothing loaded)            20     8   19.5      6   GPU   GPU 
 Qwen3-4B fp16        clean (nothing loaded)            20    16   19.5     13   GPU   GPU 
 Qwen3-4B fp16        clean (nothing loaded)            20    32   19.5     26   GPU   GPU 
 Qwen3-4B fp16        clean (nothing loaded)            20    64   19.5     51   CPU   GPU  <
+Qwen3-4B fp16        clean (nothing loaded)            20    96   19.5     77   CPU   GPU  <
 Qwen3-4B fp16        clean (nothing loaded)            20   128   19.5    102   CPU   GPU  <
 Qwen3-4B fp16        clean (nothing loaded)            20   256   19.5    205   CPU   GPU  <
 Qwen3-4B fp16        clean (nothing loaded)            24     8   23.5      6   GPU   GPU 
 Qwen3-4B fp16        clean (nothing loaded)            24    16   23.5     13   GPU   GPU 
 Qwen3-4B fp16        clean (nothing loaded)            24    32   23.5     26   GPU   GPU 
 Qwen3-4B fp16        clean (nothing loaded)            24    64   23.5     51   CPU   GPU  <
+Qwen3-4B fp16        clean (nothing loaded)            24    96   23.5     77   CPU   GPU  <
 Qwen3-4B fp16        clean (nothing loaded)            24   128   23.5    102   CPU   GPU  <
 Qwen3-4B fp16        clean (nothing loaded)            24   256   23.5    205   CPU   GPU  <
 Qwen3-4B fp16        clean (nothing loaded)            32     8   31.5      6   GPU   GPU 
 Qwen3-4B fp16        clean (nothing loaded)            32    16   31.5     13   GPU   GPU 
 Qwen3-4B fp16        clean (nothing loaded)            32    32   31.5     26   GPU   GPU 
 Qwen3-4B fp16        clean (nothing loaded)            32    64   31.5     51   GPU   GPU 
+Qwen3-4B fp16        clean (nothing loaded)            32    96   31.5     77   CPU   GPU  <
 Qwen3-4B fp16        clean (nothing loaded)            32   128   31.5    102   CPU   GPU  <
 Qwen3-4B fp16        clean (nothing loaded)            32   256   31.5    205   CPU   GPU  <
 Qwen3-4B fp16        clean (nothing loaded)            48     8   47.5      6   GPU   GPU 
 Qwen3-4B fp16        clean (nothing loaded)            48    16   47.5     13   GPU   GPU 
 Qwen3-4B fp16        clean (nothing loaded)            48    32   47.5     26   GPU   GPU 
 Qwen3-4B fp16        clean (nothing loaded)            48    64   47.5     51   GPU   GPU 
+Qwen3-4B fp16        clean (nothing loaded)            48    96   47.5     77   GPU   GPU 
 Qwen3-4B fp16        clean (nothing loaded)            48   128   47.5    102   CPU   GPU  <
 Qwen3-4B fp16        clean (nothing loaded)            48   256   47.5    205   CPU   GPU  <
 Qwen3-4B fp16        + small diffusion (7 GB)           8     8    0.5      6   CPU   CPU 
 Qwen3-4B fp16        + small diffusion (7 GB)           8    16    0.5     13   CPU   CPU 
 Qwen3-4B fp16        + small diffusion (7 GB)           8    32    0.5     26   CPU   CPU 
 Qwen3-4B fp16        + small diffusion (7 GB)           8    64    0.5     51   CPU   CPU 
+Qwen3-4B fp16        + small diffusion (7 GB)           8    96    0.5     77   CPU   CPU 
 Qwen3-4B fp16        + small diffusion (7 GB)           8   128    0.5    102   CPU   CPU 
 Qwen3-4B fp16        + small diffusion (7 GB)           8   256    0.5    205   CPU   CPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          12     8    4.5      6   CPU   CPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          12    16    4.5     13   CPU   CPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          12    32    4.5     26   CPU   CPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          12    64    4.5     51   CPU   CPU 
+Qwen3-4B fp16        + small diffusion (7 GB)          12    96    4.5     77   CPU   CPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          12   128    4.5    102   CPU   CPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          12   256    4.5    205   CPU   CPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          16     8    8.5      6   CPU   CPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          16    16    8.5     13   CPU   CPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          16    32    8.5     26   CPU   CPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          16    64    8.5     51   CPU   CPU 
+Qwen3-4B fp16        + small diffusion (7 GB)          16    96    8.5     77   CPU   CPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          16   128    8.5    102   CPU   CPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          16   256    8.5    205   CPU   CPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          20     8   12.5      6   GPU   GPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          20    16   12.5     13   GPU   GPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          20    32   12.5     26   CPU   GPU  <
 Qwen3-4B fp16        + small diffusion (7 GB)          20    64   12.5     51   CPU   GPU  <
+Qwen3-4B fp16        + small diffusion (7 GB)          20    96   12.5     77   CPU   GPU  <
 Qwen3-4B fp16        + small diffusion (7 GB)          20   128   12.5    102   CPU   GPU  <
 Qwen3-4B fp16        + small diffusion (7 GB)          20   256   12.5    205   CPU   GPU  <
 Qwen3-4B fp16        + small diffusion (7 GB)          24     8   16.5      6   GPU   GPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          24    16   16.5     13   GPU   GPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          24    32   16.5     26   GPU   GPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          24    64   16.5     51   CPU   GPU  <
+Qwen3-4B fp16        + small diffusion (7 GB)          24    96   16.5     77   CPU   GPU  <
 Qwen3-4B fp16        + small diffusion (7 GB)          24   128   16.5    102   CPU   GPU  <
 Qwen3-4B fp16        + small diffusion (7 GB)          24   256   16.5    205   CPU   GPU  <
 Qwen3-4B fp16        + small diffusion (7 GB)          32     8   24.5      6   GPU   GPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          32    16   24.5     13   GPU   GPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          32    32   24.5     26   GPU   GPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          32    64   24.5     51   CPU   GPU  <
+Qwen3-4B fp16        + small diffusion (7 GB)          32    96   24.5     77   CPU   GPU  <
 Qwen3-4B fp16        + small diffusion (7 GB)          32   128   24.5    102   CPU   GPU  <
 Qwen3-4B fp16        + small diffusion (7 GB)          32   256   24.5    205   CPU   GPU  <
 Qwen3-4B fp16        + small diffusion (7 GB)          48     8   40.5      6   GPU   GPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          48    16   40.5     13   GPU   GPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          48    32   40.5     26   GPU   GPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          48    64   40.5     51   GPU   GPU 
+Qwen3-4B fp16        + small diffusion (7 GB)          48    96   40.5     77   GPU   GPU 
 Qwen3-4B fp16        + small diffusion (7 GB)          48   128   40.5    102   CPU   GPU  <
 Qwen3-4B fp16        + small diffusion (7 GB)          48   256   40.5    205   CPU   GPU  <
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               16     8    3.8      6   CPU   CPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               16    16    3.8     13   CPU   CPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               16    32    3.8     26   CPU   CPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               16    64    3.8     51   CPU   CPU 
+Qwen3-4B fp16        + Lumina2 (11.7 GB)               16    96    3.8     77   CPU   CPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               16   128    3.8    102   CPU   CPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               16   256    3.8    205   CPU   CPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               20     8    7.8      6   CPU   CPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               20    16    7.8     13   CPU   CPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               20    32    7.8     26   CPU   CPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               20    64    7.8     51   CPU   CPU 
+Qwen3-4B fp16        + Lumina2 (11.7 GB)               20    96    7.8     77   CPU   CPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               20   128    7.8    102   CPU   CPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               20   256    7.8    205   CPU   CPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               24     8   11.8      6   GPU   GPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               24    16   11.8     13   GPU   GPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               24    32   11.8     26   CPU   GPU  <
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               24    64   11.8     51   CPU   GPU  <
+Qwen3-4B fp16        + Lumina2 (11.7 GB)               24    96   11.8     77   CPU   GPU  <
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               24   128   11.8    102   CPU   GPU  <
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               24   256   11.8    205   CPU   GPU  <
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               32     8   19.8      6   GPU   GPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               32    16   19.8     13   GPU   GPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               32    32   19.8     26   GPU   GPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               32    64   19.8     51   CPU   GPU  <
+Qwen3-4B fp16        + Lumina2 (11.7 GB)               32    96   19.8     77   CPU   GPU  <
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               32   128   19.8    102   CPU   GPU  <
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               32   256   19.8    205   CPU   GPU  <
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               48     8   35.8      6   GPU   GPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               48    16   35.8     13   GPU   GPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               48    32   35.8     26   GPU   GPU 
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               48    64   35.8     51   GPU   GPU 
+Qwen3-4B fp16        + Lumina2 (11.7 GB)               48    96   35.8     77   CPU   GPU  <
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               48   128   35.8    102   CPU   GPU  <
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               48   256   35.8    205   CPU   GPU  <
 Qwen3-4B fp16        + large model (15 GB)             16     8    0.5      6   CPU   CPU 
 Qwen3-4B fp16        + large model (15 GB)             16    16    0.5     13   CPU   CPU 
 Qwen3-4B fp16        + large model (15 GB)             16    32    0.5     26   CPU   CPU 
 Qwen3-4B fp16        + large model (15 GB)             16    64    0.5     51   CPU   CPU 
+Qwen3-4B fp16        + large model (15 GB)             16    96    0.5     77   CPU   CPU 
 Qwen3-4B fp16        + large model (15 GB)             16   128    0.5    102   CPU   CPU 
 Qwen3-4B fp16        + large model (15 GB)             16   256    0.5    205   CPU   CPU 
 Qwen3-4B fp16        + large model (15 GB)             20     8    4.5      6   CPU   CPU 
 Qwen3-4B fp16        + large model (15 GB)             20    16    4.5     13   CPU   CPU 
 Qwen3-4B fp16        + large model (15 GB)             20    32    4.5     26   CPU   CPU 
 Qwen3-4B fp16        + large model (15 GB)             20    64    4.5     51   CPU   CPU 
+Qwen3-4B fp16        + large model (15 GB)             20    96    4.5     77   CPU   CPU 
 Qwen3-4B fp16        + large model (15 GB)             20   128    4.5    102   CPU   CPU 
 Qwen3-4B fp16        + large model (15 GB)             20   256    4.5    205   CPU   CPU 
 Qwen3-4B fp16        + large model (15 GB)             24     8    8.5      6   CPU   CPU 
 Qwen3-4B fp16        + large model (15 GB)             24    16    8.5     13   CPU   CPU 
 Qwen3-4B fp16        + large model (15 GB)             24    32    8.5     26   CPU   CPU 
 Qwen3-4B fp16        + large model (15 GB)             24    64    8.5     51   CPU   CPU 
+Qwen3-4B fp16        + large model (15 GB)             24    96    8.5     77   CPU   CPU 
 Qwen3-4B fp16        + large model (15 GB)             24   128    8.5    102   CPU   CPU 
 Qwen3-4B fp16        + large model (15 GB)             24   256    8.5    205   CPU   CPU 
 Qwen3-4B fp16        + large model (15 GB)             32     8   16.5      6   GPU   GPU 
 Qwen3-4B fp16        + large model (15 GB)             32    16   16.5     13   GPU   GPU 
 Qwen3-4B fp16        + large model (15 GB)             32    32   16.5     26   GPU   GPU 
 Qwen3-4B fp16        + large model (15 GB)             32    64   16.5     51   CPU   GPU  <
+Qwen3-4B fp16        + large model (15 GB)             32    96   16.5     77   CPU   GPU  <
 Qwen3-4B fp16        + large model (15 GB)             32   128   16.5    102   CPU   GPU  <
 Qwen3-4B fp16        + large model (15 GB)             32   256   16.5    205   CPU   GPU  <
 Qwen3-4B fp16        + large model (15 GB)             48     8   32.5      6   GPU   GPU 
 Qwen3-4B fp16        + large model (15 GB)             48    16   32.5     13   GPU   GPU 
 Qwen3-4B fp16        + large model (15 GB)             48    32   32.5     26   GPU   GPU 
 Qwen3-4B fp16        + large model (15 GB)             48    64   32.5     51   GPU   GPU 
+Qwen3-4B fp16        + large model (15 GB)             48    96   32.5     77   CPU   GPU  <
 Qwen3-4B fp16        + large model (15 GB)             48   128   32.5    102   CPU   GPU  <
 Qwen3-4B fp16        + large model (15 GB)             48   256   32.5    205   CPU   GPU  <
 Qwen3-4B fp32        clean (nothing loaded)             4     8    3.5      6   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)             4    16    3.5     13   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)             4    32    3.5     26   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)             4    64    3.5     51   CPU   CPU 
+Qwen3-4B fp32        clean (nothing loaded)             4    96    3.5     77   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)             4   128    3.5    102   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)             4   256    3.5    205   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)             6     8    5.5      6   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)             6    16    5.5     13   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)             6    32    5.5     26   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)             6    64    5.5     51   CPU   CPU 
+Qwen3-4B fp32        clean (nothing loaded)             6    96    5.5     77   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)             6   128    5.5    102   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)             6   256    5.5    205   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)             8     8    7.5      6   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)             8    16    7.5     13   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)             8    32    7.5     26   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)             8    64    7.5     51   CPU   CPU 
+Qwen3-4B fp32        clean (nothing loaded)             8    96    7.5     77   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)             8   128    7.5    102   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)             8   256    7.5    205   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)            12     8   11.5      6   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)            12    16   11.5     13   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)            12    32   11.5     26   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)            12    64   11.5     51   CPU   CPU 
+Qwen3-4B fp32        clean (nothing loaded)            12    96   11.5     77   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)            12   128   11.5    102   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)            12   256   11.5    205   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)            16     8   15.5      6   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)            16    16   15.5     13   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)            16    32   15.5     26   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)            16    64   15.5     51   CPU   CPU 
+Qwen3-4B fp32        clean (nothing loaded)            16    96   15.5     77   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)            16   128   15.5    102   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)            16   256   15.5    205   CPU   CPU 
 Qwen3-4B fp32        clean (nothing loaded)            20     8   19.5      6   GPU   GPU 
 Qwen3-4B fp32        clean (nothing loaded)            20    16   19.5     13   GPU   GPU 
 Qwen3-4B fp32        clean (nothing loaded)            20    32   19.5     26   GPU   GPU 
 Qwen3-4B fp32        clean (nothing loaded)            20    64   19.5     51   CPU   GPU  <
+Qwen3-4B fp32        clean (nothing loaded)            20    96   19.5     77   CPU   GPU  <
 Qwen3-4B fp32        clean (nothing loaded)            20   128   19.5    102   CPU   GPU  <
 Qwen3-4B fp32        clean (nothing loaded)            20   256   19.5    205   CPU   GPU  <
 Qwen3-4B fp32        clean (nothing loaded)            24     8   23.5      6   GPU   GPU 
 Qwen3-4B fp32        clean (nothing loaded)            24    16   23.5     13   GPU   GPU 
 Qwen3-4B fp32        clean (nothing loaded)            24    32   23.5     26   GPU   GPU 
 Qwen3-4B fp32        clean (nothing loaded)            24    64   23.5     51   CPU   GPU  <
+Qwen3-4B fp32        clean (nothing loaded)            24    96   23.5     77   CPU   GPU  <
 Qwen3-4B fp32        clean (nothing loaded)            24   128   23.5    102   CPU   GPU  <
 Qwen3-4B fp32        clean (nothing loaded)            24   256   23.5    205   CPU   GPU  <
 Qwen3-4B fp32        clean (nothing loaded)            32     8   31.5      6   GPU   GPU 
 Qwen3-4B fp32        clean (nothing loaded)            32    16   31.5     13   GPU   GPU 
 Qwen3-4B fp32        clean (nothing loaded)            32    32   31.5     26   GPU   GPU 
 Qwen3-4B fp32        clean (nothing loaded)            32    64   31.5     51   GPU   GPU 
+Qwen3-4B fp32        clean (nothing loaded)            32    96   31.5     77   CPU   GPU  <
 Qwen3-4B fp32        clean (nothing loaded)            32   128   31.5    102   CPU   GPU  <
 Qwen3-4B fp32        clean (nothing loaded)            32   256   31.5    205   CPU   GPU  <
 Qwen3-4B fp32        clean (nothing loaded)            48     8   47.5      6   GPU   GPU 
 Qwen3-4B fp32        clean (nothing loaded)            48    16   47.5     13   GPU   GPU 
 Qwen3-4B fp32        clean (nothing loaded)            48    32   47.5     26   GPU   GPU 
 Qwen3-4B fp32        clean (nothing loaded)            48    64   47.5     51   GPU   GPU 
+Qwen3-4B fp32        clean (nothing loaded)            48    96   47.5     77   GPU   GPU 
 Qwen3-4B fp32        clean (nothing loaded)            48   128   47.5    102   CPU   GPU  <
 Qwen3-4B fp32        clean (nothing loaded)            48   256   47.5    205   CPU   GPU  <
 Qwen3-4B fp32        + small diffusion (7 GB)           8     8    0.5      6   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)           8    16    0.5     13   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)           8    32    0.5     26   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)           8    64    0.5     51   CPU   CPU 
+Qwen3-4B fp32        + small diffusion (7 GB)           8    96    0.5     77   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)           8   128    0.5    102   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)           8   256    0.5    205   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          12     8    4.5      6   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          12    16    4.5     13   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          12    32    4.5     26   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          12    64    4.5     51   CPU   CPU 
+Qwen3-4B fp32        + small diffusion (7 GB)          12    96    4.5     77   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          12   128    4.5    102   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          12   256    4.5    205   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          16     8    8.5      6   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          16    16    8.5     13   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          16    32    8.5     26   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          16    64    8.5     51   CPU   CPU 
+Qwen3-4B fp32        + small diffusion (7 GB)          16    96    8.5     77   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          16   128    8.5    102   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          16   256    8.5    205   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          20     8   12.5      6   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          20    16   12.5     13   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          20    32   12.5     26   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          20    64   12.5     51   CPU   CPU 
+Qwen3-4B fp32        + small diffusion (7 GB)          20    96   12.5     77   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          20   128   12.5    102   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          20   256   12.5    205   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          24     8   16.5      6   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          24    16   16.5     13   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          24    32   16.5     26   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          24    64   16.5     51   CPU   CPU 
+Qwen3-4B fp32        + small diffusion (7 GB)          24    96   16.5     77   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          24   128   16.5    102   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          24   256   16.5    205   CPU   CPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          32     8   24.5      6   GPU   GPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          32    16   24.5     13   GPU   GPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          32    32   24.5     26   GPU   GPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          32    64   24.5     51   CPU   GPU  <
+Qwen3-4B fp32        + small diffusion (7 GB)          32    96   24.5     77   CPU   GPU  <
 Qwen3-4B fp32        + small diffusion (7 GB)          32   128   24.5    102   CPU   GPU  <
 Qwen3-4B fp32        + small diffusion (7 GB)          32   256   24.5    205   CPU   GPU  <
 Qwen3-4B fp32        + small diffusion (7 GB)          48     8   40.5      6   GPU   GPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          48    16   40.5     13   GPU   GPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          48    32   40.5     26   GPU   GPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          48    64   40.5     51   GPU   GPU 
+Qwen3-4B fp32        + small diffusion (7 GB)          48    96   40.5     77   GPU   GPU 
 Qwen3-4B fp32        + small diffusion (7 GB)          48   128   40.5    102   CPU   GPU  <
 Qwen3-4B fp32        + small diffusion (7 GB)          48   256   40.5    205   CPU   GPU  <
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               16     8    3.8      6   CPU   CPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               16    16    3.8     13   CPU   CPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               16    32    3.8     26   CPU   CPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               16    64    3.8     51   CPU   CPU 
+Qwen3-4B fp32        + Lumina2 (11.7 GB)               16    96    3.8     77   CPU   CPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               16   128    3.8    102   CPU   CPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               16   256    3.8    205   CPU   CPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               20     8    7.8      6   CPU   CPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               20    16    7.8     13   CPU   CPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               20    32    7.8     26   CPU   CPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               20    64    7.8     51   CPU   CPU 
+Qwen3-4B fp32        + Lumina2 (11.7 GB)               20    96    7.8     77   CPU   CPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               20   128    7.8    102   CPU   CPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               20   256    7.8    205   CPU   CPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               24     8   11.8      6   CPU   CPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               24    16   11.8     13   CPU   CPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               24    32   11.8     26   CPU   CPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               24    64   11.8     51   CPU   CPU 
+Qwen3-4B fp32        + Lumina2 (11.7 GB)               24    96   11.8     77   CPU   CPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               24   128   11.8    102   CPU   CPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               24   256   11.8    205   CPU   CPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               32     8   19.8      6   GPU   GPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               32    16   19.8     13   GPU   GPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               32    32   19.8     26   GPU   GPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               32    64   19.8     51   CPU   GPU  <
+Qwen3-4B fp32        + Lumina2 (11.7 GB)               32    96   19.8     77   CPU   GPU  <
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               32   128   19.8    102   CPU   GPU  <
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               32   256   19.8    205   CPU   GPU  <
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               48     8   35.8      6   GPU   GPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               48    16   35.8     13   GPU   GPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               48    32   35.8     26   GPU   GPU 
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               48    64   35.8     51   GPU   GPU 
+Qwen3-4B fp32        + Lumina2 (11.7 GB)               48    96   35.8     77   CPU   GPU  <
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               48   128   35.8    102   CPU   GPU  <
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               48   256   35.8    205   CPU   GPU  <
 Qwen3-4B fp32        + large model (15 GB)             16     8    0.5      6   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             16    16    0.5     13   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             16    32    0.5     26   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             16    64    0.5     51   CPU   CPU 
+Qwen3-4B fp32        + large model (15 GB)             16    96    0.5     77   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             16   128    0.5    102   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             16   256    0.5    205   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             20     8    4.5      6   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             20    16    4.5     13   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             20    32    4.5     26   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             20    64    4.5     51   CPU   CPU 
+Qwen3-4B fp32        + large model (15 GB)             20    96    4.5     77   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             20   128    4.5    102   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             20   256    4.5    205   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             24     8    8.5      6   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             24    16    8.5     13   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             24    32    8.5     26   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             24    64    8.5     51   CPU   CPU 
+Qwen3-4B fp32        + large model (15 GB)             24    96    8.5     77   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             24   128    8.5    102   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             24   256    8.5    205   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             32     8   16.5      6   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             32    16   16.5     13   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             32    32   16.5     26   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             32    64   16.5     51   CPU   CPU 
+Qwen3-4B fp32        + large model (15 GB)             32    96   16.5     77   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             32   128   16.5    102   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             32   256   16.5    205   CPU   CPU 
 Qwen3-4B fp32        + large model (15 GB)             48     8   32.5      6   GPU   GPU 
 Qwen3-4B fp32        + large model (15 GB)             48    16   32.5     13   GPU   GPU 
 Qwen3-4B fp32        + large model (15 GB)             48    32   32.5     26   GPU   GPU 
 Qwen3-4B fp32        + large model (15 GB)             48    64   32.5     51   GPU   GPU 
+Qwen3-4B fp32        + large model (15 GB)             48    96   32.5     77   CPU   GPU  <
 Qwen3-4B fp32        + large model (15 GB)             48   128   32.5    102   CPU   GPU  <
 Qwen3-4B fp32        + large model (15 GB)             48   256   32.5    205   CPU   GPU  <
 Llama-8B fp16        clean (nothing loaded)             4     8    3.5      6   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)             4    16    3.5     13   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)             4    32    3.5     26   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)             4    64    3.5     51   CPU   CPU 
+Llama-8B fp16        clean (nothing loaded)             4    96    3.5     77   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)             4   128    3.5    102   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)             4   256    3.5    205   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)             6     8    5.5      6   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)             6    16    5.5     13   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)             6    32    5.5     26   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)             6    64    5.5     51   CPU   CPU 
+Llama-8B fp16        clean (nothing loaded)             6    96    5.5     77   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)             6   128    5.5    102   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)             6   256    5.5    205   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)             8     8    7.5      6   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)             8    16    7.5     13   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)             8    32    7.5     26   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)             8    64    7.5     51   CPU   CPU 
+Llama-8B fp16        clean (nothing loaded)             8    96    7.5     77   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)             8   128    7.5    102   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)             8   256    7.5    205   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)            12     8   11.5      6   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)            12    16   11.5     13   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)            12    32   11.5     26   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)            12    64   11.5     51   CPU   CPU 
+Llama-8B fp16        clean (nothing loaded)            12    96   11.5     77   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)            12   128   11.5    102   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)            12   256   11.5    205   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)            16     8   15.5      6   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)            16    16   15.5     13   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)            16    32   15.5     26   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)            16    64   15.5     51   CPU   CPU 
+Llama-8B fp16        clean (nothing loaded)            16    96   15.5     77   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)            16   128   15.5    102   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)            16   256   15.5    205   CPU   CPU 
 Llama-8B fp16        clean (nothing loaded)            20     8   19.5      6   GPU   GPU 
 Llama-8B fp16        clean (nothing loaded)            20    16   19.5     13   GPU   GPU 
 Llama-8B fp16        clean (nothing loaded)            20    32   19.5     26   GPU   GPU 
 Llama-8B fp16        clean (nothing loaded)            20    64   19.5     51   CPU   GPU  <
+Llama-8B fp16        clean (nothing loaded)            20    96   19.5     77   CPU   GPU  <
 Llama-8B fp16        clean (nothing loaded)            20   128   19.5    102   CPU   GPU  <
 Llama-8B fp16        clean (nothing loaded)            20   256   19.5    205   CPU   GPU  <
 Llama-8B fp16        clean (nothing loaded)            24     8   23.5      6   GPU   GPU 
 Llama-8B fp16        clean (nothing loaded)            24    16   23.5     13   GPU   GPU 
 Llama-8B fp16        clean (nothing loaded)            24    32   23.5     26   GPU   GPU 
 Llama-8B fp16        clean (nothing loaded)            24    64   23.5     51   CPU   GPU  <
+Llama-8B fp16        clean (nothing loaded)            24    96   23.5     77   CPU   GPU  <
 Llama-8B fp16        clean (nothing loaded)            24   128   23.5    102   CPU   GPU  <
 Llama-8B fp16        clean (nothing loaded)            24   256   23.5    205   CPU   GPU  <
 Llama-8B fp16        clean (nothing loaded)            32     8   31.5      6   GPU   GPU 
 Llama-8B fp16        clean (nothing loaded)            32    16   31.5     13   GPU   GPU 
 Llama-8B fp16        clean (nothing loaded)            32    32   31.5     26   GPU   GPU 
 Llama-8B fp16        clean (nothing loaded)            32    64   31.5     51   GPU   GPU 
+Llama-8B fp16        clean (nothing loaded)            32    96   31.5     77   CPU   GPU  <
 Llama-8B fp16        clean (nothing loaded)            32   128   31.5    102   CPU   GPU  <
 Llama-8B fp16        clean (nothing loaded)            32   256   31.5    205   CPU   GPU  <
 Llama-8B fp16        clean (nothing loaded)            48     8   47.5      6   GPU   GPU 
 Llama-8B fp16        clean (nothing loaded)            48    16   47.5     13   GPU   GPU 
 Llama-8B fp16        clean (nothing loaded)            48    32   47.5     26   GPU   GPU 
 Llama-8B fp16        clean (nothing loaded)            48    64   47.5     51   GPU   GPU 
+Llama-8B fp16        clean (nothing loaded)            48    96   47.5     77   GPU   GPU 
 Llama-8B fp16        clean (nothing loaded)            48   128   47.5    102   CPU   GPU  <
 Llama-8B fp16        clean (nothing loaded)            48   256   47.5    205   CPU   GPU  <
 Llama-8B fp16        + small diffusion (7 GB)           8     8    0.5      6   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)           8    16    0.5     13   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)           8    32    0.5     26   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)           8    64    0.5     51   CPU   CPU 
+Llama-8B fp16        + small diffusion (7 GB)           8    96    0.5     77   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)           8   128    0.5    102   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)           8   256    0.5    205   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          12     8    4.5      6   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          12    16    4.5     13   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          12    32    4.5     26   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          12    64    4.5     51   CPU   CPU 
+Llama-8B fp16        + small diffusion (7 GB)          12    96    4.5     77   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          12   128    4.5    102   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          12   256    4.5    205   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          16     8    8.5      6   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          16    16    8.5     13   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          16    32    8.5     26   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          16    64    8.5     51   CPU   CPU 
+Llama-8B fp16        + small diffusion (7 GB)          16    96    8.5     77   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          16   128    8.5    102   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          16   256    8.5    205   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          20     8   12.5      6   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          20    16   12.5     13   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          20    32   12.5     26   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          20    64   12.5     51   CPU   CPU 
+Llama-8B fp16        + small diffusion (7 GB)          20    96   12.5     77   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          20   128   12.5    102   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          20   256   12.5    205   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          24     8   16.5      6   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          24    16   16.5     13   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          24    32   16.5     26   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          24    64   16.5     51   CPU   CPU 
+Llama-8B fp16        + small diffusion (7 GB)          24    96   16.5     77   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          24   128   16.5    102   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          24   256   16.5    205   CPU   CPU 
 Llama-8B fp16        + small diffusion (7 GB)          32     8   24.5      6   GPU   GPU 
 Llama-8B fp16        + small diffusion (7 GB)          32    16   24.5     13   GPU   GPU 
 Llama-8B fp16        + small diffusion (7 GB)          32    32   24.5     26   GPU   GPU 
 Llama-8B fp16        + small diffusion (7 GB)          32    64   24.5     51   CPU   GPU  <
+Llama-8B fp16        + small diffusion (7 GB)          32    96   24.5     77   CPU   GPU  <
 Llama-8B fp16        + small diffusion (7 GB)          32   128   24.5    102   CPU   GPU  <
 Llama-8B fp16        + small diffusion (7 GB)          32   256   24.5    205   CPU   GPU  <
 Llama-8B fp16        + small diffusion (7 GB)          48     8   40.5      6   GPU   GPU 
 Llama-8B fp16        + small diffusion (7 GB)          48    16   40.5     13   GPU   GPU 
 Llama-8B fp16        + small diffusion (7 GB)          48    32   40.5     26   GPU   GPU 
 Llama-8B fp16        + small diffusion (7 GB)          48    64   40.5     51   GPU   GPU 
+Llama-8B fp16        + small diffusion (7 GB)          48    96   40.5     77   GPU   GPU 
 Llama-8B fp16        + small diffusion (7 GB)          48   128   40.5    102   CPU   GPU  <
 Llama-8B fp16        + small diffusion (7 GB)          48   256   40.5    205   CPU   GPU  <
 Llama-8B fp16        + Lumina2 (11.7 GB)               16     8    3.8      6   CPU   CPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               16    16    3.8     13   CPU   CPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               16    32    3.8     26   CPU   CPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               16    64    3.8     51   CPU   CPU 
+Llama-8B fp16        + Lumina2 (11.7 GB)               16    96    3.8     77   CPU   CPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               16   128    3.8    102   CPU   CPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               16   256    3.8    205   CPU   CPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               20     8    7.8      6   CPU   CPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               20    16    7.8     13   CPU   CPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               20    32    7.8     26   CPU   CPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               20    64    7.8     51   CPU   CPU 
+Llama-8B fp16        + Lumina2 (11.7 GB)               20    96    7.8     77   CPU   CPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               20   128    7.8    102   CPU   CPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               20   256    7.8    205   CPU   CPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               24     8   11.8      6   CPU   CPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               24    16   11.8     13   CPU   CPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               24    32   11.8     26   CPU   CPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               24    64   11.8     51   CPU   CPU 
+Llama-8B fp16        + Lumina2 (11.7 GB)               24    96   11.8     77   CPU   CPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               24   128   11.8    102   CPU   CPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               24   256   11.8    205   CPU   CPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               32     8   19.8      6   GPU   GPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               32    16   19.8     13   GPU   GPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               32    32   19.8     26   GPU   GPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               32    64   19.8     51   CPU   GPU  <
+Llama-8B fp16        + Lumina2 (11.7 GB)               32    96   19.8     77   CPU   GPU  <
 Llama-8B fp16        + Lumina2 (11.7 GB)               32   128   19.8    102   CPU   GPU  <
 Llama-8B fp16        + Lumina2 (11.7 GB)               32   256   19.8    205   CPU   GPU  <
 Llama-8B fp16        + Lumina2 (11.7 GB)               48     8   35.8      6   GPU   GPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               48    16   35.8     13   GPU   GPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               48    32   35.8     26   GPU   GPU 
 Llama-8B fp16        + Lumina2 (11.7 GB)               48    64   35.8     51   GPU   GPU 
+Llama-8B fp16        + Lumina2 (11.7 GB)               48    96   35.8     77   CPU   GPU  <
 Llama-8B fp16        + Lumina2 (11.7 GB)               48   128   35.8    102   CPU   GPU  <
 Llama-8B fp16        + Lumina2 (11.7 GB)               48   256   35.8    205   CPU   GPU  <
 Llama-8B fp16        + large model (15 GB)             16     8    0.5      6   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             16    16    0.5     13   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             16    32    0.5     26   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             16    64    0.5     51   CPU   CPU 
+Llama-8B fp16        + large model (15 GB)             16    96    0.5     77   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             16   128    0.5    102   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             16   256    0.5    205   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             20     8    4.5      6   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             20    16    4.5     13   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             20    32    4.5     26   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             20    64    4.5     51   CPU   CPU 
+Llama-8B fp16        + large model (15 GB)             20    96    4.5     77   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             20   128    4.5    102   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             20   256    4.5    205   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             24     8    8.5      6   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             24    16    8.5     13   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             24    32    8.5     26   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             24    64    8.5     51   CPU   CPU 
+Llama-8B fp16        + large model (15 GB)             24    96    8.5     77   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             24   128    8.5    102   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             24   256    8.5    205   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             32     8   16.5      6   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             32    16   16.5     13   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             32    32   16.5     26   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             32    64   16.5     51   CPU   CPU 
+Llama-8B fp16        + large model (15 GB)             32    96   16.5     77   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             32   128   16.5    102   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             32   256   16.5    205   CPU   CPU 
 Llama-8B fp16        + large model (15 GB)             48     8   32.5      6   GPU   GPU 
 Llama-8B fp16        + large model (15 GB)             48    16   32.5     13   GPU   GPU 
 Llama-8B fp16        + large model (15 GB)             48    32   32.5     26   GPU   GPU 
 Llama-8B fp16        + large model (15 GB)             48    64   32.5     51   GPU   GPU 
+Llama-8B fp16        + large model (15 GB)             48    96   32.5     77   CPU   GPU  <
 Llama-8B fp16        + large model (15 GB)             48   128   32.5    102   CPU   GPU  <
 Llama-8B fp16        + large model (15 GB)             48   256   32.5    205   CPU   GPU  <
 Flux text encoders   clean (nothing loaded)             4     8    3.5      6   CPU   CPU 
 Flux text encoders   clean (nothing loaded)             4    16    3.5     13   CPU   CPU 
 Flux text encoders   clean (nothing loaded)             4    32    3.5     26   CPU   CPU 
 Flux text encoders   clean (nothing loaded)             4    64    3.5     51   CPU   CPU 
+Flux text encoders   clean (nothing loaded)             4    96    3.5     77   CPU   CPU 
 Flux text encoders   clean (nothing loaded)             4   128    3.5    102   CPU   CPU 
 Flux text encoders   clean (nothing loaded)             4   256    3.5    205   CPU   CPU 
 Flux text encoders   clean (nothing loaded)             6     8    5.5      6   CPU   CPU 
 Flux text encoders   clean (nothing loaded)             6    16    5.5     13   CPU   CPU 
 Flux text encoders   clean (nothing loaded)             6    32    5.5     26   CPU   CPU 
 Flux text encoders   clean (nothing loaded)             6    64    5.5     51   CPU   CPU 
+Flux text encoders   clean (nothing loaded)             6    96    5.5     77   CPU   CPU 
 Flux text encoders   clean (nothing loaded)             6   128    5.5    102   CPU   CPU 
 Flux text encoders   clean (nothing loaded)             6   256    5.5    205   CPU   CPU 
 Flux text encoders   clean (nothing loaded)             8     8    7.5      6   CPU   CPU 
 Flux text encoders   clean (nothing loaded)             8    16    7.5     13   CPU   CPU 
 Flux text encoders   clean (nothing loaded)             8    32    7.5     26   CPU   CPU 
 Flux text encoders   clean (nothing loaded)             8    64    7.5     51   CPU   CPU 
+Flux text encoders   clean (nothing loaded)             8    96    7.5     77   CPU   CPU 
 Flux text encoders   clean (nothing loaded)             8   128    7.5    102   CPU   CPU 
 Flux text encoders   clean (nothing loaded)             8   256    7.5    205   CPU   CPU 
 Flux text encoders   clean (nothing loaded)            12     8   11.5      6   GPU   GPU 
 Flux text encoders   clean (nothing loaded)            12    16   11.5     13   GPU   GPU 
 Flux text encoders   clean (nothing loaded)            12    32   11.5     26   CPU   GPU  <
 Flux text encoders   clean (nothing loaded)            12    64   11.5     51   CPU   GPU  <
+Flux text encoders   clean (nothing loaded)            12    96   11.5     77   CPU   GPU  <
 Flux text encoders   clean (nothing loaded)            12   128   11.5    102   CPU   GPU  <
 Flux text encoders   clean (nothing loaded)            12   256   11.5    205   CPU   GPU  <
 Flux text encoders   clean (nothing loaded)            16     8   15.5      6   GPU   GPU 
 Flux text encoders   clean (nothing loaded)            16    16   15.5     13   GPU   GPU 
 Flux text encoders   clean (nothing loaded)            16    32   15.5     26   GPU   GPU 
 Flux text encoders   clean (nothing loaded)            16    64   15.5     51   CPU   GPU  <
+Flux text encoders   clean (nothing loaded)            16    96   15.5     77   CPU   GPU  <
 Flux text encoders   clean (nothing loaded)            16   128   15.5    102   CPU   GPU  <
 Flux text encoders   clean (nothing loaded)            16   256   15.5    205   CPU   GPU  <
 Flux text encoders   clean (nothing loaded)            20     8   19.5      6   GPU   GPU 
 Flux text encoders   clean (nothing loaded)            20    16   19.5     13   GPU   GPU 
 Flux text encoders   clean (nothing loaded)            20    32   19.5     26   GPU   GPU 
 Flux text encoders   clean (nothing loaded)            20    64   19.5     51   CPU   GPU  <
+Flux text encoders   clean (nothing loaded)            20    96   19.5     77   CPU   GPU  <
 Flux text encoders   clean (nothing loaded)            20   128   19.5    102   CPU   GPU  <
 Flux text encoders   clean (nothing loaded)            20   256   19.5    205   CPU   GPU  <
 Flux text encoders   clean (nothing loaded)            24     8   23.5      6   GPU   GPU 
 Flux text encoders   clean (nothing loaded)            24    16   23.5     13   GPU   GPU 
 Flux text encoders   clean (nothing loaded)            24    32   23.5     26   GPU   GPU 
 Flux text encoders   clean (nothing loaded)            24    64   23.5     51   CPU   GPU  <
+Flux text encoders   clean (nothing loaded)            24    96   23.5     77   CPU   GPU  <
 Flux text encoders   clean (nothing loaded)            24   128   23.5    102   CPU   GPU  <
 Flux text encoders   clean (nothing loaded)            24   256   23.5    205   CPU   GPU  <
 Flux text encoders   clean (nothing loaded)            32     8   31.5      6   GPU   GPU 
 Flux text encoders   clean (nothing loaded)            32    16   31.5     13   GPU   GPU 
 Flux text encoders   clean (nothing loaded)            32    32   31.5     26   GPU   GPU 
 Flux text encoders   clean (nothing loaded)            32    64   31.5     51   GPU   GPU 
+Flux text encoders   clean (nothing loaded)            32    96   31.5     77   CPU   GPU  <
 Flux text encoders   clean (nothing loaded)            32   128   31.5    102   CPU   GPU  <
 Flux text encoders   clean (nothing loaded)            32   256   31.5    205   CPU   GPU  <
 Flux text encoders   clean (nothing loaded)            48     8   47.5      6   GPU   GPU 
 Flux text encoders   clean (nothing loaded)            48    16   47.5     13   GPU   GPU 
 Flux text encoders   clean (nothing loaded)            48    32   47.5     26   GPU   GPU 
 Flux text encoders   clean (nothing loaded)            48    64   47.5     51   GPU   GPU 
+Flux text encoders   clean (nothing loaded)            48    96   47.5     77   GPU   GPU 
 Flux text encoders   clean (nothing loaded)            48   128   47.5    102   CPU   GPU  <
 Flux text encoders   clean (nothing loaded)            48   256   47.5    205   CPU   GPU  <
 Flux text encoders   + small diffusion (7 GB)           8     8    0.5      6   CPU   CPU 
 Flux text encoders   + small diffusion (7 GB)           8    16    0.5     13   CPU   CPU 
 Flux text encoders   + small diffusion (7 GB)           8    32    0.5     26   CPU   CPU 
 Flux text encoders   + small diffusion (7 GB)           8    64    0.5     51   CPU   CPU 
+Flux text encoders   + small diffusion (7 GB)           8    96    0.5     77   CPU   CPU 
 Flux text encoders   + small diffusion (7 GB)           8   128    0.5    102   CPU   CPU 
 Flux text encoders   + small diffusion (7 GB)           8   256    0.5    205   CPU   CPU 
 Flux text encoders   + small diffusion (7 GB)          12     8    4.5      6   CPU   CPU 
 Flux text encoders   + small diffusion (7 GB)          12    16    4.5     13   CPU   CPU 
 Flux text encoders   + small diffusion (7 GB)          12    32    4.5     26   CPU   CPU 
 Flux text encoders   + small diffusion (7 GB)          12    64    4.5     51   CPU   CPU 
+Flux text encoders   + small diffusion (7 GB)          12    96    4.5     77   CPU   CPU 
 Flux text encoders   + small diffusion (7 GB)          12   128    4.5    102   CPU   CPU 
 Flux text encoders   + small diffusion (7 GB)          12   256    4.5    205   CPU   CPU 
 Flux text encoders   + small diffusion (7 GB)          16     8    8.5      6   CPU   CPU 
 Flux text encoders   + small diffusion (7 GB)          16    16    8.5     13   CPU   CPU 
 Flux text encoders   + small diffusion (7 GB)          16    32    8.5     26   CPU   CPU 
 Flux text encoders   + small diffusion (7 GB)          16    64    8.5     51   CPU   CPU 
+Flux text encoders   + small diffusion (7 GB)          16    96    8.5     77   CPU   CPU 
 Flux text encoders   + small diffusion (7 GB)          16   128    8.5    102   CPU   CPU 
 Flux text encoders   + small diffusion (7 GB)          16   256    8.5    205   CPU   CPU 
 Flux text encoders   + small diffusion (7 GB)          20     8   12.5      6   GPU   GPU 
 Flux text encoders   + small diffusion (7 GB)          20    16   12.5     13   GPU   GPU 
 Flux text encoders   + small diffusion (7 GB)          20    32   12.5     26   CPU   GPU  <
 Flux text encoders   + small diffusion (7 GB)          20    64   12.5     51   CPU   GPU  <
+Flux text encoders   + small diffusion (7 GB)          20    96   12.5     77   CPU   GPU  <
 Flux text encoders   + small diffusion (7 GB)          20   128   12.5    102   CPU   GPU  <
 Flux text encoders   + small diffusion (7 GB)          20   256   12.5    205   CPU   GPU  <
 Flux text encoders   + small diffusion (7 GB)          24     8   16.5      6   GPU   GPU 
 Flux text encoders   + small diffusion (7 GB)          24    16   16.5     13   GPU   GPU 
 Flux text encoders   + small diffusion (7 GB)          24    32   16.5     26   GPU   GPU 
 Flux text encoders   + small diffusion (7 GB)          24    64   16.5     51   CPU   GPU  <
+Flux text encoders   + small diffusion (7 GB)          24    96   16.5     77   CPU   GPU  <
 Flux text encoders   + small diffusion (7 GB)          24   128   16.5    102   CPU   GPU  <
 Flux text encoders   + small diffusion (7 GB)          24   256   16.5    205   CPU   GPU  <
 Flux text encoders   + small diffusion (7 GB)          32     8   24.5      6   GPU   GPU 
 Flux text encoders   + small diffusion (7 GB)          32    16   24.5     13   GPU   GPU 
 Flux text encoders   + small diffusion (7 GB)          32    32   24.5     26   GPU   GPU 
 Flux text encoders   + small diffusion (7 GB)          32    64   24.5     51   CPU   GPU  <
+Flux text encoders   + small diffusion (7 GB)          32    96   24.5     77   CPU   GPU  <
 Flux text encoders   + small diffusion (7 GB)          32   128   24.5    102   CPU   GPU  <
 Flux text encoders   + small diffusion (7 GB)          32   256   24.5    205   CPU   GPU  <
 Flux text encoders   + small diffusion (7 GB)          48     8   40.5      6   GPU   GPU 
 Flux text encoders   + small diffusion (7 GB)          48    16   40.5     13   GPU   GPU 
 Flux text encoders   + small diffusion (7 GB)          48    32   40.5     26   GPU   GPU 
 Flux text encoders   + small diffusion (7 GB)          48    64   40.5     51   GPU   GPU 
+Flux text encoders   + small diffusion (7 GB)          48    96   40.5     77   GPU   GPU 
 Flux text encoders   + small diffusion (7 GB)          48   128   40.5    102   CPU   GPU  <
 Flux text encoders   + small diffusion (7 GB)          48   256   40.5    205   CPU   GPU  <
 Flux text encoders   + Lumina2 (11.7 GB)               16     8    3.8      6   CPU   CPU 
 Flux text encoders   + Lumina2 (11.7 GB)               16    16    3.8     13   CPU   CPU 
 Flux text encoders   + Lumina2 (11.7 GB)               16    32    3.8     26   CPU   CPU 
 Flux text encoders   + Lumina2 (11.7 GB)               16    64    3.8     51   CPU   CPU 
+Flux text encoders   + Lumina2 (11.7 GB)               16    96    3.8     77   CPU   CPU 
 Flux text encoders   + Lumina2 (11.7 GB)               16   128    3.8    102   CPU   CPU 
 Flux text encoders   + Lumina2 (11.7 GB)               16   256    3.8    205   CPU   CPU 
 Flux text encoders   + Lumina2 (11.7 GB)               20     8    7.8      6   CPU   CPU 
 Flux text encoders   + Lumina2 (11.7 GB)               20    16    7.8     13   CPU   CPU 
 Flux text encoders   + Lumina2 (11.7 GB)               20    32    7.8     26   CPU   CPU 
 Flux text encoders   + Lumina2 (11.7 GB)               20    64    7.8     51   CPU   CPU 
+Flux text encoders   + Lumina2 (11.7 GB)               20    96    7.8     77   CPU   CPU 
 Flux text encoders   + Lumina2 (11.7 GB)               20   128    7.8    102   CPU   CPU 
 Flux text encoders   + Lumina2 (11.7 GB)               20   256    7.8    205   CPU   CPU 
 Flux text encoders   + Lumina2 (11.7 GB)               24     8   11.8      6   GPU   GPU 
 Flux text encoders   + Lumina2 (11.7 GB)               24    16   11.8     13   GPU   GPU 
 Flux text encoders   + Lumina2 (11.7 GB)               24    32   11.8     26   CPU   GPU  <
 Flux text encoders   + Lumina2 (11.7 GB)               24    64   11.8     51   CPU   GPU  <
+Flux text encoders   + Lumina2 (11.7 GB)               24    96   11.8     77   CPU   GPU  <
 Flux text encoders   + Lumina2 (11.7 GB)               24   128   11.8    102   CPU   GPU  <
 Flux text encoders   + Lumina2 (11.7 GB)               24   256   11.8    205   CPU   GPU  <
 Flux text encoders   + Lumina2 (11.7 GB)               32     8   19.8      6   GPU   GPU 
 Flux text encoders   + Lumina2 (11.7 GB)               32    16   19.8     13   GPU   GPU 
 Flux text encoders   + Lumina2 (11.7 GB)               32    32   19.8     26   GPU   GPU 
 Flux text encoders   + Lumina2 (11.7 GB)               32    64   19.8     51   CPU   GPU  <
+Flux text encoders   + Lumina2 (11.7 GB)               32    96   19.8     77   CPU   GPU  <
 Flux text encoders   + Lumina2 (11.7 GB)               32   128   19.8    102   CPU   GPU  <
 Flux text encoders   + Lumina2 (11.7 GB)               32   256   19.8    205   CPU   GPU  <
 Flux text encoders   + Lumina2 (11.7 GB)               48     8   35.8      6   GPU   GPU 
 Flux text encoders   + Lumina2 (11.7 GB)               48    16   35.8     13   GPU   GPU 
 Flux text encoders   + Lumina2 (11.7 GB)               48    32   35.8     26   GPU   GPU 
 Flux text encoders   + Lumina2 (11.7 GB)               48    64   35.8     51   GPU   GPU 
+Flux text encoders   + Lumina2 (11.7 GB)               48    96   35.8     77   CPU   GPU  <
 Flux text encoders   + Lumina2 (11.7 GB)               48   128   35.8    102   CPU   GPU  <
 Flux text encoders   + Lumina2 (11.7 GB)               48   256   35.8    205   CPU   GPU  <
 Flux text encoders   + large model (15 GB)             16     8    0.5      6   CPU   CPU 
 Flux text encoders   + large model (15 GB)             16    16    0.5     13   CPU   CPU 
 Flux text encoders   + large model (15 GB)             16    32    0.5     26   CPU   CPU 
 Flux text encoders   + large model (15 GB)             16    64    0.5     51   CPU   CPU 
+Flux text encoders   + large model (15 GB)             16    96    0.5     77   CPU   CPU 
 Flux text encoders   + large model (15 GB)             16   128    0.5    102   CPU   CPU 
 Flux text encoders   + large model (15 GB)             16   256    0.5    205   CPU   CPU 
 Flux text encoders   + large model (15 GB)             20     8    4.5      6   CPU   CPU 
 Flux text encoders   + large model (15 GB)             20    16    4.5     13   CPU   CPU 
 Flux text encoders   + large model (15 GB)             20    32    4.5     26   CPU   CPU 
 Flux text encoders   + large model (15 GB)             20    64    4.5     51   CPU   CPU 
+Flux text encoders   + large model (15 GB)             20    96    4.5     77   CPU   CPU 
 Flux text encoders   + large model (15 GB)             20   128    4.5    102   CPU   CPU 
 Flux text encoders   + large model (15 GB)             20   256    4.5    205   CPU   CPU 
 Flux text encoders   + large model (15 GB)             24     8    8.5      6   CPU   CPU 
 Flux text encoders   + large model (15 GB)             24    16    8.5     13   CPU   CPU 
 Flux text encoders   + large model (15 GB)             24    32    8.5     26   CPU   CPU 
 Flux text encoders   + large model (15 GB)             24    64    8.5     51   CPU   CPU 
+Flux text encoders   + large model (15 GB)             24    96    8.5     77   CPU   CPU 
 Flux text encoders   + large model (15 GB)             24   128    8.5    102   CPU   CPU 
 Flux text encoders   + large model (15 GB)             24   256    8.5    205   CPU   CPU 
 Flux text encoders   + large model (15 GB)             32     8   16.5      6   GPU   GPU 
 Flux text encoders   + large model (15 GB)             32    16   16.5     13   GPU   GPU 
 Flux text encoders   + large model (15 GB)             32    32   16.5     26   GPU   GPU 
 Flux text encoders   + large model (15 GB)             32    64   16.5     51   CPU   GPU  <
+Flux text encoders   + large model (15 GB)             32    96   16.5     77   CPU   GPU  <
 Flux text encoders   + large model (15 GB)             32   128   16.5    102   CPU   GPU  <
 Flux text encoders   + large model (15 GB)             32   256   16.5    205   CPU   GPU  <
 Flux text encoders   + large model (15 GB)             48     8   32.5      6   GPU   GPU 
 Flux text encoders   + large model (15 GB)             48    16   32.5     13   GPU   GPU 
 Flux text encoders   + large model (15 GB)             48    32   32.5     26   GPU   GPU 
 Flux text encoders   + large model (15 GB)             48    64   32.5     51   GPU   GPU 
+Flux text encoders   + large model (15 GB)             48    96   32.5     77   CPU   GPU  <
 Flux text encoders   + large model (15 GB)             48   128   32.5    102   CPU   GPU  <
 Flux text encoders   + large model (15 GB)             48   256   32.5    205   CPU   GPU  <
 
-CHANGES ONLY (298 cases where behaviour differs)
+CHANGES ONLY (382 cases where behaviour differs)
 --------------------------------------------------------------------------------
 Model                Scenario                        VRAM   RAM  FreeV  FreeR  Orig   Fix
 --------------------------------------------------------------------------------
 Flux text encoders   + Lumina2 (11.7 GB)               24    32   11.8     26   CPU   GPU
 Flux text encoders   + Lumina2 (11.7 GB)               24    64   11.8     51   CPU   GPU
+Flux text encoders   + Lumina2 (11.7 GB)               24    96   11.8     77   CPU   GPU
 Flux text encoders   + Lumina2 (11.7 GB)               24   128   11.8    102   CPU   GPU
 Flux text encoders   + Lumina2 (11.7 GB)               24   256   11.8    205   CPU   GPU
 Flux text encoders   + Lumina2 (11.7 GB)               32    64   19.8     51   CPU   GPU
+Flux text encoders   + Lumina2 (11.7 GB)               32    96   19.8     77   CPU   GPU
 Flux text encoders   + Lumina2 (11.7 GB)               32   128   19.8    102   CPU   GPU
 Flux text encoders   + Lumina2 (11.7 GB)               32   256   19.8    205   CPU   GPU
+Flux text encoders   + Lumina2 (11.7 GB)               48    96   35.8     77   CPU   GPU
 Flux text encoders   + Lumina2 (11.7 GB)               48   128   35.8    102   CPU   GPU
 Flux text encoders   + Lumina2 (11.7 GB)               48   256   35.8    205   CPU   GPU
 Flux text encoders   + large model (15 GB)             32    64   16.5     51   CPU   GPU
+Flux text encoders   + large model (15 GB)             32    96   16.5     77   CPU   GPU
 Flux text encoders   + large model (15 GB)             32   128   16.5    102   CPU   GPU
 Flux text encoders   + large model (15 GB)             32   256   16.5    205   CPU   GPU
+Flux text encoders   + large model (15 GB)             48    96   32.5     77   CPU   GPU
 Flux text encoders   + large model (15 GB)             48   128   32.5    102   CPU   GPU
 Flux text encoders   + large model (15 GB)             48   256   32.5    205   CPU   GPU
 Flux text encoders   + small diffusion (7 GB)          20    32   12.5     26   CPU   GPU
 Flux text encoders   + small diffusion (7 GB)          20    64   12.5     51   CPU   GPU
+Flux text encoders   + small diffusion (7 GB)          20    96   12.5     77   CPU   GPU
 Flux text encoders   + small diffusion (7 GB)          20   128   12.5    102   CPU   GPU
 Flux text encoders   + small diffusion (7 GB)          20   256   12.5    205   CPU   GPU
 Flux text encoders   + small diffusion (7 GB)          24    64   16.5     51   CPU   GPU
+Flux text encoders   + small diffusion (7 GB)          24    96   16.5     77   CPU   GPU
 Flux text encoders   + small diffusion (7 GB)          24   128   16.5    102   CPU   GPU
 Flux text encoders   + small diffusion (7 GB)          24   256   16.5    205   CPU   GPU
 Flux text encoders   + small diffusion (7 GB)          32    64   24.5     51   CPU   GPU
+Flux text encoders   + small diffusion (7 GB)          32    96   24.5     77   CPU   GPU
 Flux text encoders   + small diffusion (7 GB)          32   128   24.5    102   CPU   GPU
 Flux text encoders   + small diffusion (7 GB)          32   256   24.5    205   CPU   GPU
 Flux text encoders   + small diffusion (7 GB)          48   128   40.5    102   CPU   GPU
 Flux text encoders   + small diffusion (7 GB)          48   256   40.5    205   CPU   GPU
 Flux text encoders   clean (nothing loaded)            12    32   11.5     26   CPU   GPU
 Flux text encoders   clean (nothing loaded)            12    64   11.5     51   CPU   GPU
+Flux text encoders   clean (nothing loaded)            12    96   11.5     77   CPU   GPU
 Flux text encoders   clean (nothing loaded)            12   128   11.5    102   CPU   GPU
 Flux text encoders   clean (nothing loaded)            12   256   11.5    205   CPU   GPU
 Flux text encoders   clean (nothing loaded)            16    64   15.5     51   CPU   GPU
+Flux text encoders   clean (nothing loaded)            16    96   15.5     77   CPU   GPU
 Flux text encoders   clean (nothing loaded)            16   128   15.5    102   CPU   GPU
 Flux text encoders   clean (nothing loaded)            16   256   15.5    205   CPU   GPU
 Flux text encoders   clean (nothing loaded)            20    64   19.5     51   CPU   GPU
+Flux text encoders   clean (nothing loaded)            20    96   19.5     77   CPU   GPU
 Flux text encoders   clean (nothing loaded)            20   128   19.5    102   CPU   GPU
 Flux text encoders   clean (nothing loaded)            20   256   19.5    205   CPU   GPU
 Flux text encoders   clean (nothing loaded)            24    64   23.5     51   CPU   GPU
+Flux text encoders   clean (nothing loaded)            24    96   23.5     77   CPU   GPU
 Flux text encoders   clean (nothing loaded)            24   128   23.5    102   CPU   GPU
 Flux text encoders   clean (nothing loaded)            24   256   23.5    205   CPU   GPU
+Flux text encoders   clean (nothing loaded)            32    96   31.5     77   CPU   GPU
 Flux text encoders   clean (nothing loaded)            32   128   31.5    102   CPU   GPU
 Flux text encoders   clean (nothing loaded)            32   256   31.5    205   CPU   GPU
 Flux text encoders   clean (nothing loaded)            48   128   47.5    102   CPU   GPU
 Flux text encoders   clean (nothing loaded)            48   256   47.5    205   CPU   GPU
 Llama-8B fp16        + Lumina2 (11.7 GB)               32    64   19.8     51   CPU   GPU
+Llama-8B fp16        + Lumina2 (11.7 GB)               32    96   19.8     77   CPU   GPU
 Llama-8B fp16        + Lumina2 (11.7 GB)               32   128   19.8    102   CPU   GPU
 Llama-8B fp16        + Lumina2 (11.7 GB)               32   256   19.8    205   CPU   GPU
+Llama-8B fp16        + Lumina2 (11.7 GB)               48    96   35.8     77   CPU   GPU
 Llama-8B fp16        + Lumina2 (11.7 GB)               48   128   35.8    102   CPU   GPU
 Llama-8B fp16        + Lumina2 (11.7 GB)               48   256   35.8    205   CPU   GPU
+Llama-8B fp16        + large model (15 GB)             48    96   32.5     77   CPU   GPU
 Llama-8B fp16        + large model (15 GB)             48   128   32.5    102   CPU   GPU
 Llama-8B fp16        + large model (15 GB)             48   256   32.5    205   CPU   GPU
 Llama-8B fp16        + small diffusion (7 GB)          32    64   24.5     51   CPU   GPU
+Llama-8B fp16        + small diffusion (7 GB)          32    96   24.5     77   CPU   GPU
 Llama-8B fp16        + small diffusion (7 GB)          32   128   24.5    102   CPU   GPU
 Llama-8B fp16        + small diffusion (7 GB)          32   256   24.5    205   CPU   GPU
 Llama-8B fp16        + small diffusion (7 GB)          48   128   40.5    102   CPU   GPU
 Llama-8B fp16        + small diffusion (7 GB)          48   256   40.5    205   CPU   GPU
 Llama-8B fp16        clean (nothing loaded)            20    64   19.5     51   CPU   GPU
+Llama-8B fp16        clean (nothing loaded)            20    96   19.5     77   CPU   GPU
 Llama-8B fp16        clean (nothing loaded)            20   128   19.5    102   CPU   GPU
 Llama-8B fp16        clean (nothing loaded)            20   256   19.5    205   CPU   GPU
 Llama-8B fp16        clean (nothing loaded)            24    64   23.5     51   CPU   GPU
+Llama-8B fp16        clean (nothing loaded)            24    96   23.5     77   CPU   GPU
 Llama-8B fp16        clean (nothing loaded)            24   128   23.5    102   CPU   GPU
 Llama-8B fp16        clean (nothing loaded)            24   256   23.5    205   CPU   GPU
+Llama-8B fp16        clean (nothing loaded)            32    96   31.5     77   CPU   GPU
 Llama-8B fp16        clean (nothing loaded)            32   128   31.5    102   CPU   GPU
 Llama-8B fp16        clean (nothing loaded)            32   256   31.5    205   CPU   GPU
 Llama-8B fp16        clean (nothing loaded)            48   128   47.5    102   CPU   GPU
 Llama-8B fp16        clean (nothing loaded)            48   256   47.5    205   CPU   GPU
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               24    32   11.8     26   CPU   GPU
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               24    64   11.8     51   CPU   GPU
+Qwen3-4B fp16        + Lumina2 (11.7 GB)               24    96   11.8     77   CPU   GPU
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               24   128   11.8    102   CPU   GPU
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               24   256   11.8    205   CPU   GPU
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               32    64   19.8     51   CPU   GPU
+Qwen3-4B fp16        + Lumina2 (11.7 GB)               32    96   19.8     77   CPU   GPU
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               32   128   19.8    102   CPU   GPU
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               32   256   19.8    205   CPU   GPU
+Qwen3-4B fp16        + Lumina2 (11.7 GB)               48    96   35.8     77   CPU   GPU
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               48   128   35.8    102   CPU   GPU
 Qwen3-4B fp16        + Lumina2 (11.7 GB)               48   256   35.8    205   CPU   GPU
 Qwen3-4B fp16        + large model (15 GB)             32    64   16.5     51   CPU   GPU
+Qwen3-4B fp16        + large model (15 GB)             32    96   16.5     77   CPU   GPU
 Qwen3-4B fp16        + large model (15 GB)             32   128   16.5    102   CPU   GPU
 Qwen3-4B fp16        + large model (15 GB)             32   256   16.5    205   CPU   GPU
+Qwen3-4B fp16        + large model (15 GB)             48    96   32.5     77   CPU   GPU
 Qwen3-4B fp16        + large model (15 GB)             48   128   32.5    102   CPU   GPU
 Qwen3-4B fp16        + large model (15 GB)             48   256   32.5    205   CPU   GPU
 Qwen3-4B fp16        + small diffusion (7 GB)          20    32   12.5     26   CPU   GPU
 Qwen3-4B fp16        + small diffusion (7 GB)          20    64   12.5     51   CPU   GPU
+Qwen3-4B fp16        + small diffusion (7 GB)          20    96   12.5     77   CPU   GPU
 Qwen3-4B fp16        + small diffusion (7 GB)          20   128   12.5    102   CPU   GPU
 Qwen3-4B fp16        + small diffusion (7 GB)          20   256   12.5    205   CPU   GPU
 Qwen3-4B fp16        + small diffusion (7 GB)          24    64   16.5     51   CPU   GPU
+Qwen3-4B fp16        + small diffusion (7 GB)          24    96   16.5     77   CPU   GPU
 Qwen3-4B fp16        + small diffusion (7 GB)          24   128   16.5    102   CPU   GPU
 Qwen3-4B fp16        + small diffusion (7 GB)          24   256   16.5    205   CPU   GPU
 Qwen3-4B fp16        + small diffusion (7 GB)          32    64   24.5     51   CPU   GPU
+Qwen3-4B fp16        + small diffusion (7 GB)          32    96   24.5     77   CPU   GPU
 Qwen3-4B fp16        + small diffusion (7 GB)          32   128   24.5    102   CPU   GPU
 Qwen3-4B fp16        + small diffusion (7 GB)          32   256   24.5    205   CPU   GPU
 Qwen3-4B fp16        + small diffusion (7 GB)          48   128   40.5    102   CPU   GPU
 Qwen3-4B fp16        + small diffusion (7 GB)          48   256   40.5    205   CPU   GPU
 Qwen3-4B fp16        clean (nothing loaded)            12    32   11.5     26   CPU   GPU
 Qwen3-4B fp16        clean (nothing loaded)            12    64   11.5     51   CPU   GPU
+Qwen3-4B fp16        clean (nothing loaded)            12    96   11.5     77   CPU   GPU
 Qwen3-4B fp16        clean (nothing loaded)            12   128   11.5    102   CPU   GPU
 Qwen3-4B fp16        clean (nothing loaded)            12   256   11.5    205   CPU   GPU
 Qwen3-4B fp16        clean (nothing loaded)            16    64   15.5     51   CPU   GPU
+Qwen3-4B fp16        clean (nothing loaded)            16    96   15.5     77   CPU   GPU
 Qwen3-4B fp16        clean (nothing loaded)            16   128   15.5    102   CPU   GPU
 Qwen3-4B fp16        clean (nothing loaded)            16   256   15.5    205   CPU   GPU
 Qwen3-4B fp16        clean (nothing loaded)            20    64   19.5     51   CPU   GPU
+Qwen3-4B fp16        clean (nothing loaded)            20    96   19.5     77   CPU   GPU
 Qwen3-4B fp16        clean (nothing loaded)            20   128   19.5    102   CPU   GPU
 Qwen3-4B fp16        clean (nothing loaded)            20   256   19.5    205   CPU   GPU
 Qwen3-4B fp16        clean (nothing loaded)            24    64   23.5     51   CPU   GPU
+Qwen3-4B fp16        clean (nothing loaded)            24    96   23.5     77   CPU   GPU
 Qwen3-4B fp16        clean (nothing loaded)            24   128   23.5    102   CPU   GPU
 Qwen3-4B fp16        clean (nothing loaded)            24   256   23.5    205   CPU   GPU
+Qwen3-4B fp16        clean (nothing loaded)            32    96   31.5     77   CPU   GPU
 Qwen3-4B fp16        clean (nothing loaded)            32   128   31.5    102   CPU   GPU
 Qwen3-4B fp16        clean (nothing loaded)            32   256   31.5    205   CPU   GPU
 Qwen3-4B fp16        clean (nothing loaded)            48   128   47.5    102   CPU   GPU
 Qwen3-4B fp16        clean (nothing loaded)            48   256   47.5    205   CPU   GPU
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               32    64   19.8     51   CPU   GPU
+Qwen3-4B fp32        + Lumina2 (11.7 GB)               32    96   19.8     77   CPU   GPU
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               32   128   19.8    102   CPU   GPU
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               32   256   19.8    205   CPU   GPU
+Qwen3-4B fp32        + Lumina2 (11.7 GB)               48    96   35.8     77   CPU   GPU
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               48   128   35.8    102   CPU   GPU
 Qwen3-4B fp32        + Lumina2 (11.7 GB)               48   256   35.8    205   CPU   GPU
+Qwen3-4B fp32        + large model (15 GB)             48    96   32.5     77   CPU   GPU
 Qwen3-4B fp32        + large model (15 GB)             48   128   32.5    102   CPU   GPU
 Qwen3-4B fp32        + large model (15 GB)             48   256   32.5    205   CPU   GPU
 Qwen3-4B fp32        + small diffusion (7 GB)          32    64   24.5     51   CPU   GPU
+Qwen3-4B fp32        + small diffusion (7 GB)          32    96   24.5     77   CPU   GPU
 Qwen3-4B fp32        + small diffusion (7 GB)          32   128   24.5    102   CPU   GPU
 Qwen3-4B fp32        + small diffusion (7 GB)          32   256   24.5    205   CPU   GPU
 Qwen3-4B fp32        + small diffusion (7 GB)          48   128   40.5    102   CPU   GPU
 Qwen3-4B fp32        + small diffusion (7 GB)          48   256   40.5    205   CPU   GPU
 Qwen3-4B fp32        clean (nothing loaded)            20    64   19.5     51   CPU   GPU
+Qwen3-4B fp32        clean (nothing loaded)            20    96   19.5     77   CPU   GPU
 Qwen3-4B fp32        clean (nothing loaded)            20   128   19.5    102   CPU   GPU
 Qwen3-4B fp32        clean (nothing loaded)            20   256   19.5    205   CPU   GPU
 Qwen3-4B fp32        clean (nothing loaded)            24    64   23.5     51   CPU   GPU
+Qwen3-4B fp32        clean (nothing loaded)            24    96   23.5     77   CPU   GPU
 Qwen3-4B fp32        clean (nothing loaded)            24   128   23.5    102   CPU   GPU
 Qwen3-4B fp32        clean (nothing loaded)            24   256   23.5    205   CPU   GPU
+Qwen3-4B fp32        clean (nothing loaded)            32    96   31.5     77   CPU   GPU
 Qwen3-4B fp32        clean (nothing loaded)            32   128   31.5    102   CPU   GPU
 Qwen3-4B fp32        clean (nothing loaded)            32   256   31.5    205   CPU   GPU
 Qwen3-4B fp32        clean (nothing loaded)            48   128   47.5    102   CPU   GPU
@@ -1084,52 +1280,66 @@ Qwen3-4B fp32        clean (nothing loaded)            48   256   47.5    205   
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               16    16    3.8     13   CPU   GPU
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               16    32    3.8     26   CPU   GPU
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               16    64    3.8     51   CPU   GPU
+SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               16    96    3.8     77   CPU   GPU
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               16   128    3.8    102   CPU   GPU
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               16   256    3.8    205   CPU   GPU
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               20    32    7.8     26   CPU   GPU
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               20    64    7.8     51   CPU   GPU
+SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               20    96    7.8     77   CPU   GPU
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               20   128    7.8    102   CPU   GPU
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               20   256    7.8    205   CPU   GPU
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               24    32   11.8     26   CPU   GPU
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               24    64   11.8     51   CPU   GPU
+SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               24    96   11.8     77   CPU   GPU
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               24   128   11.8    102   CPU   GPU
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               24   256   11.8    205   CPU   GPU
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               32    64   19.8     51   CPU   GPU
+SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               32    96   19.8     77   CPU   GPU
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               32   128   19.8    102   CPU   GPU
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               32   256   19.8    205   CPU   GPU
+SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               48    96   35.8     77   CPU   GPU
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               48   128   35.8    102   CPU   GPU
 SD1.5 CLIP fp32      + Lumina2 (11.7 GB)               48   256   35.8    205   CPU   GPU
 SD1.5 CLIP fp32      + large model (15 GB)             20    16    4.5     13   CPU   GPU
 SD1.5 CLIP fp32      + large model (15 GB)             20    32    4.5     26   CPU   GPU
 SD1.5 CLIP fp32      + large model (15 GB)             20    64    4.5     51   CPU   GPU
+SD1.5 CLIP fp32      + large model (15 GB)             20    96    4.5     77   CPU   GPU
 SD1.5 CLIP fp32      + large model (15 GB)             20   128    4.5    102   CPU   GPU
 SD1.5 CLIP fp32      + large model (15 GB)             20   256    4.5    205   CPU   GPU
 SD1.5 CLIP fp32      + large model (15 GB)             24    32    8.5     26   CPU   GPU
 SD1.5 CLIP fp32      + large model (15 GB)             24    64    8.5     51   CPU   GPU
+SD1.5 CLIP fp32      + large model (15 GB)             24    96    8.5     77   CPU   GPU
 SD1.5 CLIP fp32      + large model (15 GB)             24   128    8.5    102   CPU   GPU
 SD1.5 CLIP fp32      + large model (15 GB)             24   256    8.5    205   CPU   GPU
 SD1.5 CLIP fp32      + large model (15 GB)             32    64   16.5     51   CPU   GPU
+SD1.5 CLIP fp32      + large model (15 GB)             32    96   16.5     77   CPU   GPU
 SD1.5 CLIP fp32      + large model (15 GB)             32   128   16.5    102   CPU   GPU
 SD1.5 CLIP fp32      + large model (15 GB)             32   256   16.5    205   CPU   GPU
+SD1.5 CLIP fp32      + large model (15 GB)             48    96   32.5     77   CPU   GPU
 SD1.5 CLIP fp32      + large model (15 GB)             48   128   32.5    102   CPU   GPU
 SD1.5 CLIP fp32      + large model (15 GB)             48   256   32.5    205   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          12    16    4.5     13   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          12    32    4.5     26   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          12    64    4.5     51   CPU   GPU
+SD1.5 CLIP fp32      + small diffusion (7 GB)          12    96    4.5     77   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          12   128    4.5    102   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          12   256    4.5    205   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          16    32    8.5     26   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          16    64    8.5     51   CPU   GPU
+SD1.5 CLIP fp32      + small diffusion (7 GB)          16    96    8.5     77   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          16   128    8.5    102   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          16   256    8.5    205   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          20    32   12.5     26   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          20    64   12.5     51   CPU   GPU
+SD1.5 CLIP fp32      + small diffusion (7 GB)          20    96   12.5     77   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          20   128   12.5    102   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          20   256   12.5    205   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          24    64   16.5     51   CPU   GPU
+SD1.5 CLIP fp32      + small diffusion (7 GB)          24    96   16.5     77   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          24   128   16.5    102   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          24   256   16.5    205   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          32    64   24.5     51   CPU   GPU
+SD1.5 CLIP fp32      + small diffusion (7 GB)          32    96   24.5     77   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          32   128   24.5    102   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          32   256   24.5    205   CPU   GPU
 SD1.5 CLIP fp32      + small diffusion (7 GB)          48   128   40.5    102   CPU   GPU
@@ -1137,30 +1347,38 @@ SD1.5 CLIP fp32      + small diffusion (7 GB)          48   256   40.5    205   
 SD1.5 CLIP fp32      clean (nothing loaded)             4    16    3.5     13   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)             4    32    3.5     26   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)             4    64    3.5     51   CPU   GPU
+SD1.5 CLIP fp32      clean (nothing loaded)             4    96    3.5     77   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)             4   128    3.5    102   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)             4   256    3.5    205   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)             6    16    5.5     13   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)             6    32    5.5     26   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)             6    64    5.5     51   CPU   GPU
+SD1.5 CLIP fp32      clean (nothing loaded)             6    96    5.5     77   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)             6   128    5.5    102   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)             6   256    5.5    205   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)             8    32    7.5     26   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)             8    64    7.5     51   CPU   GPU
+SD1.5 CLIP fp32      clean (nothing loaded)             8    96    7.5     77   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)             8   128    7.5    102   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)             8   256    7.5    205   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)            12    32   11.5     26   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)            12    64   11.5     51   CPU   GPU
+SD1.5 CLIP fp32      clean (nothing loaded)            12    96   11.5     77   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)            12   128   11.5    102   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)            12   256   11.5    205   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)            16    64   15.5     51   CPU   GPU
+SD1.5 CLIP fp32      clean (nothing loaded)            16    96   15.5     77   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)            16   128   15.5    102   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)            16   256   15.5    205   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)            20    64   19.5     51   CPU   GPU
+SD1.5 CLIP fp32      clean (nothing loaded)            20    96   19.5     77   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)            20   128   19.5    102   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)            20   256   19.5    205   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)            24    64   23.5     51   CPU   GPU
+SD1.5 CLIP fp32      clean (nothing loaded)            24    96   23.5     77   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)            24   128   23.5    102   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)            24   256   23.5    205   CPU   GPU
+SD1.5 CLIP fp32      clean (nothing loaded)            32    96   31.5     77   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)            32   128   31.5    102   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)            32   256   31.5    205   CPU   GPU
 SD1.5 CLIP fp32      clean (nothing loaded)            48   128   47.5    102   CPU   GPU
@@ -1168,52 +1386,66 @@ SD1.5 CLIP fp32      clean (nothing loaded)            48   256   47.5    205   
 SDXL CLIP            + Lumina2 (11.7 GB)               16    16    3.8     13   CPU   GPU
 SDXL CLIP            + Lumina2 (11.7 GB)               16    32    3.8     26   CPU   GPU
 SDXL CLIP            + Lumina2 (11.7 GB)               16    64    3.8     51   CPU   GPU
+SDXL CLIP            + Lumina2 (11.7 GB)               16    96    3.8     77   CPU   GPU
 SDXL CLIP            + Lumina2 (11.7 GB)               16   128    3.8    102   CPU   GPU
 SDXL CLIP            + Lumina2 (11.7 GB)               16   256    3.8    205   CPU   GPU
 SDXL CLIP            + Lumina2 (11.7 GB)               20    32    7.8     26   CPU   GPU
 SDXL CLIP            + Lumina2 (11.7 GB)               20    64    7.8     51   CPU   GPU
+SDXL CLIP            + Lumina2 (11.7 GB)               20    96    7.8     77   CPU   GPU
 SDXL CLIP            + Lumina2 (11.7 GB)               20   128    7.8    102   CPU   GPU
 SDXL CLIP            + Lumina2 (11.7 GB)               20   256    7.8    205   CPU   GPU
 SDXL CLIP            + Lumina2 (11.7 GB)               24    32   11.8     26   CPU   GPU
 SDXL CLIP            + Lumina2 (11.7 GB)               24    64   11.8     51   CPU   GPU
+SDXL CLIP            + Lumina2 (11.7 GB)               24    96   11.8     77   CPU   GPU
 SDXL CLIP            + Lumina2 (11.7 GB)               24   128   11.8    102   CPU   GPU
 SDXL CLIP            + Lumina2 (11.7 GB)               24   256   11.8    205   CPU   GPU
 SDXL CLIP            + Lumina2 (11.7 GB)               32    64   19.8     51   CPU   GPU
+SDXL CLIP            + Lumina2 (11.7 GB)               32    96   19.8     77   CPU   GPU
 SDXL CLIP            + Lumina2 (11.7 GB)               32   128   19.8    102   CPU   GPU
 SDXL CLIP            + Lumina2 (11.7 GB)               32   256   19.8    205   CPU   GPU
+SDXL CLIP            + Lumina2 (11.7 GB)               48    96   35.8     77   CPU   GPU
 SDXL CLIP            + Lumina2 (11.7 GB)               48   128   35.8    102   CPU   GPU
 SDXL CLIP            + Lumina2 (11.7 GB)               48   256   35.8    205   CPU   GPU
 SDXL CLIP            + large model (15 GB)             20    16    4.5     13   CPU   GPU
 SDXL CLIP            + large model (15 GB)             20    32    4.5     26   CPU   GPU
 SDXL CLIP            + large model (15 GB)             20    64    4.5     51   CPU   GPU
+SDXL CLIP            + large model (15 GB)             20    96    4.5     77   CPU   GPU
 SDXL CLIP            + large model (15 GB)             20   128    4.5    102   CPU   GPU
 SDXL CLIP            + large model (15 GB)             20   256    4.5    205   CPU   GPU
 SDXL CLIP            + large model (15 GB)             24    32    8.5     26   CPU   GPU
 SDXL CLIP            + large model (15 GB)             24    64    8.5     51   CPU   GPU
+SDXL CLIP            + large model (15 GB)             24    96    8.5     77   CPU   GPU
 SDXL CLIP            + large model (15 GB)             24   128    8.5    102   CPU   GPU
 SDXL CLIP            + large model (15 GB)             24   256    8.5    205   CPU   GPU
 SDXL CLIP            + large model (15 GB)             32    64   16.5     51   CPU   GPU
+SDXL CLIP            + large model (15 GB)             32    96   16.5     77   CPU   GPU
 SDXL CLIP            + large model (15 GB)             32   128   16.5    102   CPU   GPU
 SDXL CLIP            + large model (15 GB)             32   256   16.5    205   CPU   GPU
+SDXL CLIP            + large model (15 GB)             48    96   32.5     77   CPU   GPU
 SDXL CLIP            + large model (15 GB)             48   128   32.5    102   CPU   GPU
 SDXL CLIP            + large model (15 GB)             48   256   32.5    205   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          12    16    4.5     13   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          12    32    4.5     26   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          12    64    4.5     51   CPU   GPU
+SDXL CLIP            + small diffusion (7 GB)          12    96    4.5     77   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          12   128    4.5    102   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          12   256    4.5    205   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          16    32    8.5     26   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          16    64    8.5     51   CPU   GPU
+SDXL CLIP            + small diffusion (7 GB)          16    96    8.5     77   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          16   128    8.5    102   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          16   256    8.5    205   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          20    32   12.5     26   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          20    64   12.5     51   CPU   GPU
+SDXL CLIP            + small diffusion (7 GB)          20    96   12.5     77   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          20   128   12.5    102   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          20   256   12.5    205   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          24    64   16.5     51   CPU   GPU
+SDXL CLIP            + small diffusion (7 GB)          24    96   16.5     77   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          24   128   16.5    102   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          24   256   16.5    205   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          32    64   24.5     51   CPU   GPU
+SDXL CLIP            + small diffusion (7 GB)          32    96   24.5     77   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          32   128   24.5    102   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          32   256   24.5    205   CPU   GPU
 SDXL CLIP            + small diffusion (7 GB)          48   128   40.5    102   CPU   GPU
@@ -1221,38 +1453,46 @@ SDXL CLIP            + small diffusion (7 GB)          48   256   40.5    205   
 SDXL CLIP            clean (nothing loaded)             4    16    3.5     13   CPU   GPU
 SDXL CLIP            clean (nothing loaded)             4    32    3.5     26   CPU   GPU
 SDXL CLIP            clean (nothing loaded)             4    64    3.5     51   CPU   GPU
+SDXL CLIP            clean (nothing loaded)             4    96    3.5     77   CPU   GPU
 SDXL CLIP            clean (nothing loaded)             4   128    3.5    102   CPU   GPU
 SDXL CLIP            clean (nothing loaded)             4   256    3.5    205   CPU   GPU
 SDXL CLIP            clean (nothing loaded)             6    16    5.5     13   CPU   GPU
 SDXL CLIP            clean (nothing loaded)             6    32    5.5     26   CPU   GPU
 SDXL CLIP            clean (nothing loaded)             6    64    5.5     51   CPU   GPU
+SDXL CLIP            clean (nothing loaded)             6    96    5.5     77   CPU   GPU
 SDXL CLIP            clean (nothing loaded)             6   128    5.5    102   CPU   GPU
 SDXL CLIP            clean (nothing loaded)             6   256    5.5    205   CPU   GPU
 SDXL CLIP            clean (nothing loaded)             8    32    7.5     26   CPU   GPU
 SDXL CLIP            clean (nothing loaded)             8    64    7.5     51   CPU   GPU
+SDXL CLIP            clean (nothing loaded)             8    96    7.5     77   CPU   GPU
 SDXL CLIP            clean (nothing loaded)             8   128    7.5    102   CPU   GPU
 SDXL CLIP            clean (nothing loaded)             8   256    7.5    205   CPU   GPU
 SDXL CLIP            clean (nothing loaded)            12    32   11.5     26   CPU   GPU
 SDXL CLIP            clean (nothing loaded)            12    64   11.5     51   CPU   GPU
+SDXL CLIP            clean (nothing loaded)            12    96   11.5     77   CPU   GPU
 SDXL CLIP            clean (nothing loaded)            12   128   11.5    102   CPU   GPU
 SDXL CLIP            clean (nothing loaded)            12   256   11.5    205   CPU   GPU
 SDXL CLIP            clean (nothing loaded)            16    64   15.5     51   CPU   GPU
+SDXL CLIP            clean (nothing loaded)            16    96   15.5     77   CPU   GPU
 SDXL CLIP            clean (nothing loaded)            16   128   15.5    102   CPU   GPU
 SDXL CLIP            clean (nothing loaded)            16   256   15.5    205   CPU   GPU
 SDXL CLIP            clean (nothing loaded)            20    64   19.5     51   CPU   GPU
+SDXL CLIP            clean (nothing loaded)            20    96   19.5     77   CPU   GPU
 SDXL CLIP            clean (nothing loaded)            20   128   19.5    102   CPU   GPU
 SDXL CLIP            clean (nothing loaded)            20   256   19.5    205   CPU   GPU
 SDXL CLIP            clean (nothing loaded)            24    64   23.5     51   CPU   GPU
+SDXL CLIP            clean (nothing loaded)            24    96   23.5     77   CPU   GPU
 SDXL CLIP            clean (nothing loaded)            24   128   23.5    102   CPU   GPU
 SDXL CLIP            clean (nothing loaded)            24   256   23.5    205   CPU   GPU
+SDXL CLIP            clean (nothing loaded)            32    96   31.5     77   CPU   GPU
 SDXL CLIP            clean (nothing loaded)            32   128   31.5    102   CPU   GPU
 SDXL CLIP            clean (nothing loaded)            32   256   31.5    205   CPU   GPU
 SDXL CLIP            clean (nothing loaded)            48   128   47.5    102   CPU   GPU
 SDXL CLIP            clean (nothing loaded)            48   256   47.5    205   CPU   GPU
 
-  Total combinations:  936
-  Behaviour changed:   298  (31.8 %)
-  All other cases:     original and fixed agree  (638)
+  Total combinations:  1092
+  Behaviour changed:   382  (35.0 %)
+  All other cases:     original and fixed agree  (710)
   <  indicates a change
 
   OK - Zero regressions: every change goes CPU -> GPU (never GPU -> CPU)

@@ -8,7 +8,7 @@ the text encoder on GPU or CPU.
 # ── scenario definitions ──────────────────────────────────────────────
 
 VRAMS_GB = [4, 6, 8, 12, 16, 20, 24, 32, 48]
-RAMS_GB  = [8, 16, 32, 64, 128, 256]
+RAMS_GB  = [8, 16, 32, 64, 96, 128, 256]
 
 # (label, model_size_gb)  —  sizes in gibibytes
 MODELS = [
@@ -130,48 +130,6 @@ def simulate():
     print(f"  Safety margin:  model_size * {HEADROOM}  <  free_vram")
     print(f"  RAM available:  {CPU_AVAIL_RATIO*100:.0f} % of total")
     print(f"  Overhead:       {OVERHEAD_GB} GB reserved on GPU")
-    print()
-
-    # ── full table ───────────────────────────────────────────────────
-    print("─── FULL MATRIX ──────────────────────────────────────────────────────────────")
-    print(f"{'Model':<20} {'Scenario':<30} {'VRAM':>5} {'RAM':>5} "
-          f"{'FreeV':>6} {'FreeR':>6} {'Orig':>5} {'Fix':>5}  {'Δ'}")
-    print("─" * 90)
-    for r in rows:
-        mark = " ◀" if r[-1] else ""
-        print(f"{r[0]:<20} {r[2]:<30} {r[3]:>5.0f} {r[4]:>5.0f} "
-              f"{r[5]:>6.1f} {r[6]:>6.0f} {r[7]:>5} {r[8]:>5} {mark}")
-    print()
-
-    # ── changed rows only ────────────────────────────────────────────
-    print(f"─── CHANGES ONLY ({len(changed_rows)} cases where behaviour differs) ───────")
-    print(f"{'Model':<20} {'Scenario':<30} {'VRAM':>5} {'RAM':>5} "
-          f"{'FreeV':>6} {'FreeR':>6} {'Orig':>5} {'Fix':>5}")
-    print("─" * 80)
-    for r in changed_rows:
-        print(f"{r[0]:<20} {r[2]:<30} {r[3]:>5.0f} {r[4]:>5.0f} "
-              f"{r[5]:>6.1f} {r[6]:>6.0f} {r[7]:>5} {r[8]:>5}")
-    print()
-
-    # ── statistics ───────────────────────────────────────────────────
-    total = len(rows)
-    changed = len(changed_rows)
-    pct = changed / total * 100 if total else 0
-    print(f"  Total combinations:  {total}")
-    print(f"  Behaviour changed:   {changed}  ({pct:.1f} %)")
-    print(f"  All other cases:     original and fixed agree  ({(1-pct/100)*total:.0f})")
-    print()
-    print("  ◀  indicates a change")
-    print()
-
-    # ── guard check:  no regressions ─────────────────────────────────
-    regressions = [r for r in changed_rows if r[7] == "GPU" and r[8] == "CPU"]
-    if regressions:
-        print("  ⚠  REGRESSIONS  (original=GPU → fixed=CPU):")
-        for r in regressions:
-            print(f"     {r[0]:20} {r[2]:30}  VRAM={r[3]}  RAM={r[4]}")
-    else:
-        print("  ✅  Zero regressions:  every change goes  CPU → GPU  (never GPU → CPU)")
     print()
 
 

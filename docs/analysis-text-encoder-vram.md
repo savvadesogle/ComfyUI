@@ -117,7 +117,7 @@ A Python simulation is provided at [`docs/text_encoder_sim.py`](./text_encoder_s
 exhaustively tests all combinations of:
 
 - **VRAM sizes:** 4, 6, 8, 12, 16, 20, 24, 32, 48 GB
-- **RAM sizes:** 8, 16, 32, 64, 128, 256 GB
+- **RAM sizes:** 8, 16, 32, 64, 96, 128, 256 GB
 - **Model sizes:** SD1.5 CLIP fp32 (1.3 GB), SDXL CLIP (2 GB), Qwen3 4B fp16 (7.6 GB),
   Qwen3 4B fp32 (15.2 GB), Llama 8B fp16 (15 GB), Flux text encoders (8.5 GB)
 - **Scenarios:** clean system, after loading a 7 GB diffusion model, after Lumina2
@@ -132,9 +132,9 @@ python docs/text_encoder_sim.py
 
 | Metric                     | Value      |
 |----------------------------|-----------|
-| Total combinations tested  | 936       |
-| Behaviour changed          | 298 (31.8 %) |
-| Original and fix agree     | 638       |
+| Total combinations tested  | 1092      |
+| Behaviour changed          | 382 (35.0 %) |
+| Original and fix agree     | 710       |
 | Regressions (GPU → CPU)    | **0** ✅  |
 
 Every single changed case goes **CPU → GPU** — the fix only *improves* device placement,
