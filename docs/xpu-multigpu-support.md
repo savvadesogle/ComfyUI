@@ -63,6 +63,8 @@ The `MultiGPUThreadPool` (Python threads, one per device) **does** parallelize w
 
 Model: [SDXL base 1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) (`sd_xl_base_1.0.safetensors`), 1024×1024 → 2048×2048 (via SD Ultimate Upscale), CFG=7, 20 steps, Euler sampler.
 
+![MultiGPU benchmark log](xpu-multigpu-benchmark.png)
+
 ## Branch
 
 The fix is available in the `fix/xpu-multigpu-windows` branch:
