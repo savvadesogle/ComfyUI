@@ -112,7 +112,8 @@ Slightly over the 1 GB threshold, this enters the `text_encoder_initial_device` 
 
 ## Automated simulation
 
-A Python simulation is provided at [`docs/text_encoder_sim.py`](./text_encoder_sim.py) that
+A Python simulation is provided at [`docs/text_encoder_sim.py`](./text_encoder_sim.py)
+(full output at [`docs/simulation_results.txt`](./simulation_results.txt)) that
 exhaustively tests all combinations of:
 
 - **VRAM sizes:** 4, 6, 8, 12, 16, 20, 24, 32, 48 GB
