@@ -169,6 +169,15 @@ check entirely — not affected.
 | +8.0 GB (2048²)   | 800  / 3486     | 22.9% | 0           |
 | +18.0 GB (4096²)  | 184  / 1050     | 17.5% | 0           |
 
+## Real-world scenario: 16 GB VRAM + 128 GB RAM
+
+A step-by-step worked example showing how `text_encoder_initial_device()`
+behaves before and after the fix on a typical 16 GB GPU with 128 GB of
+system RAM — covering large text encoders, small ones, tight VRAM, and
+dual-GPU setups.
+
+See [`scenario-16gb-vram-128gb-ram.md`](./scenario-16gb-vram-128gb-ram.md).
+
 ## Conclusion
 
 The fix is **safe for all configurations**. Behavior only changes in cases where:
