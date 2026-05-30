@@ -33,18 +33,24 @@ Assumptions:
 | 8 GB | 16 GB| ~7 GB     | ~12 GB    | GPU      | CPU     | OOM guard ✅    |
 | 8 GB | 32 GB| ~7 GB     | ~28 GB    | CPU      | CPU     | OOM guard ✅    |
 | 8 GB | 64 GB| ~7 GB     | ~60 GB    | CPU      | CPU     | OOM guard ✅    |
+| 8 GB | 96 GB| ~7 GB     | ~77 GB    | CPU      | CPU     | OOM guard ✅    |
 | 12 GB| 16 GB| ~11 GB    | ~12 GB    | GPU      | GPU     | ✅             |
 | 12 GB| 32 GB| ~11 GB    | ~28 GB    | CPU      | **GPU** | Bug fix ✅      |
 | 12 GB| 64 GB| ~11 GB    | ~60 GB    | CPU      | **GPU** | Bug fix ✅      |
+| 12 GB| 96 GB| ~11 GB    | ~77 GB    | CPU      | **GPU** | Bug fix ✅      |
 | 16 GB| 16 GB| ~15 GB    | ~12 GB    | GPU      | GPU     | ✅             |
 | 16 GB| 32 GB| ~15 GB    | ~28 GB    | GPU      | GPU     | ✅             |
 | 16 GB| 64 GB| ~15 GB    | ~60 GB    | CPU      | **GPU** | Bug fix ✅      |
+| 16 GB| 96 GB| ~15 GB    | ~77 GB    | CPU      | **GPU** | Bug fix ✅      |
 | 16 GB| 128GB| ~15 GB    | ~124 GB   | CPU      | **GPU** | Bug fix ✅      |
 | 20 GB| 64 GB| ~19 GB    | ~60 GB    | CPU      | **GPU** | Bug fix ✅      |
+| 20 GB| 96 GB| ~19 GB    | ~77 GB    | CPU      | **GPU** | Bug fix ✅      |
 | 24 GB| 32 GB| ~23 GB    | ~28 GB    | GPU      | GPU     | ✅             |
 | 24 GB| 64 GB| ~23 GB    | ~60 GB    | CPU      | **GPU** | Bug fix ✅      |
+| 24 GB| 96 GB| ~23 GB    | ~77 GB    | CPU      | **GPU** | Bug fix ✅      |
 | 24 GB| 128GB| ~23 GB    | ~124 GB   | CPU      | **GPU** | Bug fix ✅      |
 | 32 GB| 64 GB| ~31 GB    | ~60 GB    | GPU      | GPU     | ✅             |
+| 32 GB| 96 GB| ~31 GB    | ~77 GB    | CPU      | **GPU** | Bug fix ✅      |
 | 32 GB| 128GB| ~31 GB    | ~124 GB   | CPU      | **GPU** | Bug fix ✅      |
 
 ## Edge case analysis — no regressions
