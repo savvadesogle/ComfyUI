@@ -54,7 +54,7 @@ Hardware: 2× Intel Arc A770 on PCIe Gen3 x16, dual Xeon E5-2699v3 (each GPU on 
 | **1× A770** (no MultiGPU node) | 20 | 1.73–2.00 | 45–50s | 1× (baseline) |
 | **2× A770** (+ MultiGPU CFG Split) | 20 | **1.10** | **31–38s** | **~1.7×** |
 
-Model: [SDXL base 1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) (`sd_xl_base_1.0.safetensors`), 1024×1024 → 2048×2048 (via SD Ultimate Upscale), CFG=7, 20 steps, Euler sampler.
+Model: [SDXL base 1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) (`sd_xl_base_1.0.safetensors`), 2048×2048, CFG=7, 20 steps, Euler sampler.
 
 ![MultiGPU benchmark log](xpu-multigpu-benchmark.png)
 
@@ -66,8 +66,9 @@ The fix is available in the `fix/xpu-multigpu-windows` branch:
 https://github.com/savvadesogle/ComfyUI/tree/fix/xpu-multigpu-windows
 ```
 
-Contains two commits:
+Contains three commits:
 
-1. `6030742f` — `set_torch_device()` helper: device-agnostic device switching
-2. `ae35e23c` — diagnostic logging for the multigpu code path
+1. [`114af2a7`](https://github.com/savvadesogle/ComfyUI/commit/114af2a7) — `set_torch_device()` helper: device-agnostic device switching
+2. [`59073544`](https://github.com/savvadesogle/ComfyUI/commit/59073544) — diagnostic logging for the multigpu code path
+3. [`59f6ae0d`](https://github.com/savvadesogle/ComfyUI/commit/59f6ae0d) — restrict logging to XPU only
 
