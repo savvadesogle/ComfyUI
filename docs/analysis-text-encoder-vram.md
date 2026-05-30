@@ -123,7 +123,7 @@ A Python simulation is provided at [`docs/text_encoder_sim.py`](./text_encoder_s
 unit tests at [`docs/test_text_encoder_device.py`](./test_text_encoder_device.py)) that
 exhaustively tests all combinations of:
 
-- **Vendors:** NVIDIA/CUDA, Intel XPU, AMD DirectML, Apple MPS, Ascend NPU, Cambricon MLU
+- **Vendors:** NVIDIA/CUDA & AMD ROCm (Linux), Intel XPU, AMD DirectML (Windows), Apple MPS, Ascend NPU, Cambricon MLU
 - **VRAM sizes:** 4, 6, 8, 12, 16, 20, 24, 32, 48 GB
 - **RAM sizes:** 8, 16, 32, 64, 96, 128, 256 GB
 - **Model sizes:** SD1.5 CLIP fp32 (1.3 GB), SDXL CLIP (2 GB), Qwen3 4B fp16 (7.6 GB),
@@ -140,19 +140,22 @@ PYTHONIOENCODING=utf-8 python -m pytest docs/test_text_encoder_device.py -v
 
 ### Results by vendor
 
-| Vendor               | Total | Changed | %     | Regressions |
-|----------------------|-------|---------|-------|-------------|
-| NVIDIA / CUDA        | 2772  | 977     | 35.2% | **0** ✅    |
-| Intel XPU            | 2772  | 977     | 35.2% | **0** ✅    |
-| AMD DirectML         | 4536  | 0       | 0.0%  | **0** ✅    |
-| Apple MPS            | —     | —       | —     | n/a (early return) |
-| Ascend NPU           | 2772  | 977     | 35.2% | **0** ✅    |
-| Cambricon MLU        | 2772  | 977     | 35.2% | **0** ✅    |
-| **TOTAL**            | 15624 | 3908    | 25.0% | **0** ✅    |
+| Vendor                     | Total | Changed | %     | Regressions |
+|----------------------------|-------|---------|-------|-------------|
+| NVIDIA CUDA / AMD ROCm     | 2772  | 977     | 35.2% | **0** ✅    |
+| Intel XPU                  | 2772  | 977     | 35.2% | **0** ✅    |
+| AMD DirectML               | 4536  | 0       | 0.0%  | **0** ✅    |
+| Apple MPS                  | —     | —       | —     | n/a (early return) |
+| Ascend NPU                 | 2772  | 977     | 35.2% | **0** ✅    |
+| Cambricon MLU              | 2772  | 977     | 35.2% | **0** ✅    |
+| **TOTAL**                  | 15624 | 3908    | 25.0% | **0** ✅    |
 
-**AMD DirectML** shows 0 changes because `get_free_memory()` hardcodes
-1 GB — neither original nor fixed code ever places a text encoder > 0.8 GB
+**AMD DirectML** (Windows) shows 0 changes because `get_free_memory()` hardcodes
+1 GB — neither original nor fixed code ever places a text encoder > 0.83 GB
 on GPU. This is a pre-existing limitation unrelated to the fix.
+
+**AMD ROCm** (Linux) uses the same `torch.cuda.*` code path as NVIDIA — covered
+under "NVIDIA CUDA / AMD ROCm".
 
 **Apple MPS** has an early `is_device_mps()` return that bypasses the
 check entirely — not affected.

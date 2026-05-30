@@ -10,16 +10,16 @@ text_encoder_initial_device()  —  ORIGINAL vs FIXED  —  multi-vendor simulat
                    2048^2 -> +8 GB    |  4096^2 -> +18 GB
 
 ────────────────────────────────────────────────────────────────────────────────
-Vendor               Total   Changed      %   Regr.   OK?
+Vendor                     Total   Changed      %   Regr.   OK?
 ────────────────────────────────────────────────────────────────────────────────
-NVIDIA CUDA           2772       977  35.2%       0   YES
-Intel XPU             2772       977  35.2%       0   YES
-AMD DirectML          4536         0   0.0%       0   YES
-Apple MPS                0         0   0.0%       0   n/a
-Ascend NPU            2772       977  35.2%       0   YES
-Cambricon MLU         2772       977  35.2%       0   YES
+NVIDIA CUDA / AMD ROCm      2772       977  35.2%       0   YES
+Intel XPU                   2772       977  35.2%       0   YES
+AMD DirectML                4536         0   0.0%       0   YES
+Apple MPS                      0         0   0.0%       0   n/a
+Ascend NPU                  2772       977  35.2%       0   YES
+Cambricon MLU               2772       977  35.2%       0   YES
 ────────────────────────────────────────────────────────────────────────────────
-TOTAL                15624      3908  25.0%       0   YES
+TOTAL                      15624      3908  25.0%       0   YES
 
 ─── Changed combinations by resolution ─────────────────
   + 0.5 GB inference:  1536 changed / 5544 total  (27.7%)  regressions: 0
@@ -28,100 +28,100 @@ TOTAL                15624      3908  25.0%       0   YES
   +18.0 GB inference:   184 changed / 1050 total  (17.5%)  regressions: 0
 
 ─── Worst-case: Lumina2 (11.7 GB) + Qwen3 fp16 at 2048x2048 ───
-  Vendor          VRAM   RAM  FreeV  FreeR  Orig   Fix Δ
-  ------------------------------------------------------
-  NVIDIA CUDA       48     8   27.8      6   GPU   GPU
-  NVIDIA CUDA       48    16   27.8     13   GPU   GPU
-  NVIDIA CUDA       48    32   27.8     26   GPU   GPU
-  NVIDIA CUDA       48    64   27.8     51   GPU   GPU
-  NVIDIA CUDA       48    96   27.8     77   CPU   GPU <
-  NVIDIA CUDA       48   128   27.8    102   CPU   GPU <
-  NVIDIA CUDA       48   256   27.8    205   CPU   GPU <
-  Intel XPU         48     8   27.8      6   GPU   GPU
-  Intel XPU         48    16   27.8     13   GPU   GPU
-  Intel XPU         48    32   27.8     26   GPU   GPU
-  Intel XPU         48    64   27.8     51   GPU   GPU
-  Intel XPU         48    96   27.8     77   CPU   GPU <
-  Intel XPU         48   128   27.8    102   CPU   GPU <
-  Intel XPU         48   256   27.8    205   CPU   GPU <
-  Ascend NPU        48     8   27.8      6   GPU   GPU
-  Ascend NPU        48    16   27.8     13   GPU   GPU
-  Ascend NPU        48    32   27.8     26   GPU   GPU
-  Ascend NPU        48    64   27.8     51   GPU   GPU
-  Ascend NPU        48    96   27.8     77   CPU   GPU <
-  Ascend NPU        48   128   27.8    102   CPU   GPU <
-  Ascend NPU        48   256   27.8    205   CPU   GPU <
-  Cambricon MLU     48     8   27.8      6   GPU   GPU
-  Cambricon MLU     48    16   27.8     13   GPU   GPU
-  Cambricon MLU     48    32   27.8     26   GPU   GPU
-  Cambricon MLU     48    64   27.8     51   GPU   GPU
-  Cambricon MLU     48    96   27.8     77   CPU   GPU <
-  Cambricon MLU     48   128   27.8    102   CPU   GPU <
-  Cambricon MLU     48   256   27.8    205   CPU   GPU <
-  NVIDIA CUDA       32     8   11.8      6   GPU   GPU
-  NVIDIA CUDA       32    16   11.8     13   GPU   GPU
-  NVIDIA CUDA       32    32   11.8     26   CPU   GPU <
-  NVIDIA CUDA       32    64   11.8     51   CPU   GPU <
-  NVIDIA CUDA       32    96   11.8     77   CPU   GPU <
-  NVIDIA CUDA       32   128   11.8    102   CPU   GPU <
-  NVIDIA CUDA       32   256   11.8    205   CPU   GPU <
-  Intel XPU         32     8   11.8      6   GPU   GPU
-  Intel XPU         32    16   11.8     13   GPU   GPU
-  Intel XPU         32    32   11.8     26   CPU   GPU <
-  Intel XPU         32    64   11.8     51   CPU   GPU <
-  Intel XPU         32    96   11.8     77   CPU   GPU <
-  Intel XPU         32   128   11.8    102   CPU   GPU <
-  Intel XPU         32   256   11.8    205   CPU   GPU <
-  Ascend NPU        32     8   11.8      6   GPU   GPU
-  Ascend NPU        32    16   11.8     13   GPU   GPU
-  Ascend NPU        32    32   11.8     26   CPU   GPU <
-  Ascend NPU        32    64   11.8     51   CPU   GPU <
-  Ascend NPU        32    96   11.8     77   CPU   GPU <
-  Ascend NPU        32   128   11.8    102   CPU   GPU <
-  Ascend NPU        32   256   11.8    205   CPU   GPU <
-  Cambricon MLU     32     8   11.8      6   GPU   GPU
-  Cambricon MLU     32    16   11.8     13   GPU   GPU
-  Cambricon MLU     32    32   11.8     26   CPU   GPU <
-  Cambricon MLU     32    64   11.8     51   CPU   GPU <
-  Cambricon MLU     32    96   11.8     77   CPU   GPU <
-  Cambricon MLU     32   128   11.8    102   CPU   GPU <
-  Cambricon MLU     32   256   11.8    205   CPU   GPU <
-  NVIDIA CUDA       24     8    3.8      6   CPU   CPU
-  NVIDIA CUDA       24    16    3.8     13   CPU   CPU
-  NVIDIA CUDA       24    32    3.8     26   CPU   CPU
-  NVIDIA CUDA       24    64    3.8     51   CPU   CPU
-  NVIDIA CUDA       24    96    3.8     77   CPU   CPU
-  NVIDIA CUDA       24   128    3.8    102   CPU   CPU
-  NVIDIA CUDA       24   256    3.8    205   CPU   CPU
-  Intel XPU         24     8    3.8      6   CPU   CPU
-  Intel XPU         24    16    3.8     13   CPU   CPU
-  Intel XPU         24    32    3.8     26   CPU   CPU
-  Intel XPU         24    64    3.8     51   CPU   CPU
-  Intel XPU         24    96    3.8     77   CPU   CPU
-  Intel XPU         24   128    3.8    102   CPU   CPU
-  Intel XPU         24   256    3.8    205   CPU   CPU
-  Ascend NPU        24     8    3.8      6   CPU   CPU
-  Ascend NPU        24    16    3.8     13   CPU   CPU
-  Ascend NPU        24    32    3.8     26   CPU   CPU
-  Ascend NPU        24    64    3.8     51   CPU   CPU
-  Ascend NPU        24    96    3.8     77   CPU   CPU
-  Ascend NPU        24   128    3.8    102   CPU   CPU
-  Ascend NPU        24   256    3.8    205   CPU   CPU
-  Cambricon MLU     24     8    3.8      6   CPU   CPU
-  Cambricon MLU     24    16    3.8     13   CPU   CPU
-  Cambricon MLU     24    32    3.8     26   CPU   CPU
-  Cambricon MLU     24    64    3.8     51   CPU   CPU
-  Cambricon MLU     24    96    3.8     77   CPU   CPU
-  Cambricon MLU     24   128    3.8    102   CPU   CPU
-  Cambricon MLU     24   256    3.8    205   CPU   CPU
+  Vendor                    VRAM   RAM  FreeV  FreeR  Orig   Fix Δ
+  ----------------------------------------------------------------
+  NVIDIA CUDA / AMD ROCm      48     8   27.8      6   GPU   GPU
+  NVIDIA CUDA / AMD ROCm      48    16   27.8     13   GPU   GPU
+  NVIDIA CUDA / AMD ROCm      48    32   27.8     26   GPU   GPU
+  NVIDIA CUDA / AMD ROCm      48    64   27.8     51   GPU   GPU
+  NVIDIA CUDA / AMD ROCm      48    96   27.8     77   CPU   GPU <
+  NVIDIA CUDA / AMD ROCm      48   128   27.8    102   CPU   GPU <
+  NVIDIA CUDA / AMD ROCm      48   256   27.8    205   CPU   GPU <
+  Intel XPU                   48     8   27.8      6   GPU   GPU
+  Intel XPU                   48    16   27.8     13   GPU   GPU
+  Intel XPU                   48    32   27.8     26   GPU   GPU
+  Intel XPU                   48    64   27.8     51   GPU   GPU
+  Intel XPU                   48    96   27.8     77   CPU   GPU <
+  Intel XPU                   48   128   27.8    102   CPU   GPU <
+  Intel XPU                   48   256   27.8    205   CPU   GPU <
+  Ascend NPU                  48     8   27.8      6   GPU   GPU
+  Ascend NPU                  48    16   27.8     13   GPU   GPU
+  Ascend NPU                  48    32   27.8     26   GPU   GPU
+  Ascend NPU                  48    64   27.8     51   GPU   GPU
+  Ascend NPU                  48    96   27.8     77   CPU   GPU <
+  Ascend NPU                  48   128   27.8    102   CPU   GPU <
+  Ascend NPU                  48   256   27.8    205   CPU   GPU <
+  Cambricon MLU               48     8   27.8      6   GPU   GPU
+  Cambricon MLU               48    16   27.8     13   GPU   GPU
+  Cambricon MLU               48    32   27.8     26   GPU   GPU
+  Cambricon MLU               48    64   27.8     51   GPU   GPU
+  Cambricon MLU               48    96   27.8     77   CPU   GPU <
+  Cambricon MLU               48   128   27.8    102   CPU   GPU <
+  Cambricon MLU               48   256   27.8    205   CPU   GPU <
+  NVIDIA CUDA / AMD ROCm      32     8   11.8      6   GPU   GPU
+  NVIDIA CUDA / AMD ROCm      32    16   11.8     13   GPU   GPU
+  NVIDIA CUDA / AMD ROCm      32    32   11.8     26   CPU   GPU <
+  NVIDIA CUDA / AMD ROCm      32    64   11.8     51   CPU   GPU <
+  NVIDIA CUDA / AMD ROCm      32    96   11.8     77   CPU   GPU <
+  NVIDIA CUDA / AMD ROCm      32   128   11.8    102   CPU   GPU <
+  NVIDIA CUDA / AMD ROCm      32   256   11.8    205   CPU   GPU <
+  Intel XPU                   32     8   11.8      6   GPU   GPU
+  Intel XPU                   32    16   11.8     13   GPU   GPU
+  Intel XPU                   32    32   11.8     26   CPU   GPU <
+  Intel XPU                   32    64   11.8     51   CPU   GPU <
+  Intel XPU                   32    96   11.8     77   CPU   GPU <
+  Intel XPU                   32   128   11.8    102   CPU   GPU <
+  Intel XPU                   32   256   11.8    205   CPU   GPU <
+  Ascend NPU                  32     8   11.8      6   GPU   GPU
+  Ascend NPU                  32    16   11.8     13   GPU   GPU
+  Ascend NPU                  32    32   11.8     26   CPU   GPU <
+  Ascend NPU                  32    64   11.8     51   CPU   GPU <
+  Ascend NPU                  32    96   11.8     77   CPU   GPU <
+  Ascend NPU                  32   128   11.8    102   CPU   GPU <
+  Ascend NPU                  32   256   11.8    205   CPU   GPU <
+  Cambricon MLU               32     8   11.8      6   GPU   GPU
+  Cambricon MLU               32    16   11.8     13   GPU   GPU
+  Cambricon MLU               32    32   11.8     26   CPU   GPU <
+  Cambricon MLU               32    64   11.8     51   CPU   GPU <
+  Cambricon MLU               32    96   11.8     77   CPU   GPU <
+  Cambricon MLU               32   128   11.8    102   CPU   GPU <
+  Cambricon MLU               32   256   11.8    205   CPU   GPU <
+  NVIDIA CUDA / AMD ROCm      24     8    3.8      6   CPU   CPU
+  NVIDIA CUDA / AMD ROCm      24    16    3.8     13   CPU   CPU
+  NVIDIA CUDA / AMD ROCm      24    32    3.8     26   CPU   CPU
+  NVIDIA CUDA / AMD ROCm      24    64    3.8     51   CPU   CPU
+  NVIDIA CUDA / AMD ROCm      24    96    3.8     77   CPU   CPU
+  NVIDIA CUDA / AMD ROCm      24   128    3.8    102   CPU   CPU
+  NVIDIA CUDA / AMD ROCm      24   256    3.8    205   CPU   CPU
+  Intel XPU                   24     8    3.8      6   CPU   CPU
+  Intel XPU                   24    16    3.8     13   CPU   CPU
+  Intel XPU                   24    32    3.8     26   CPU   CPU
+  Intel XPU                   24    64    3.8     51   CPU   CPU
+  Intel XPU                   24    96    3.8     77   CPU   CPU
+  Intel XPU                   24   128    3.8    102   CPU   CPU
+  Intel XPU                   24   256    3.8    205   CPU   CPU
+  Ascend NPU                  24     8    3.8      6   CPU   CPU
+  Ascend NPU                  24    16    3.8     13   CPU   CPU
+  Ascend NPU                  24    32    3.8     26   CPU   CPU
+  Ascend NPU                  24    64    3.8     51   CPU   CPU
+  Ascend NPU                  24    96    3.8     77   CPU   CPU
+  Ascend NPU                  24   128    3.8    102   CPU   CPU
+  Ascend NPU                  24   256    3.8    205   CPU   CPU
+  Cambricon MLU               24     8    3.8      6   CPU   CPU
+  Cambricon MLU               24    16    3.8     13   CPU   CPU
+  Cambricon MLU               24    32    3.8     26   CPU   CPU
+  Cambricon MLU               24    64    3.8     51   CPU   CPU
+  Cambricon MLU               24    96    3.8     77   CPU   CPU
+  Cambricon MLU               24   128    3.8    102   CPU   CPU
+  Cambricon MLU               24   256    3.8    205   CPU   CPU
 
 ─── AMD DirectML changes (0 cases) ────────────
   DirectML get_free_memory() always returns 1 GB (hardcoded).
   Only models < 0.83 GB can fit → all changed cases
   go from Original=GPU to Fixed=GPU (not actually changed).
-  NVIDIA CUDA changed:  977 cases (the real metric)
+  CUDA/ROCm (NVIDIA + AMD Linux) changed:  977 cases (the real metric)
 
-  ✅  Zero regressions across ALL vendors (CUDA/XPU/DML/NPU/MLU).
+  ✅  Zero regressions across ALL vendors (CUDA/ROCm/XPU/DML/NPU/MLU).
      Every change goes CPU → GPU.
 
   Total combinations:   15624

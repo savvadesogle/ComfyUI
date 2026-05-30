@@ -10,7 +10,7 @@ from __future__ import annotations
 
 VENDORS: list[dict] = [
     {
-        "name": "NVIDIA CUDA",
+        "name": "NVIDIA CUDA / AMD ROCm",
         "abbr": "CUDA",
         "free_vram_fn": lambda total, used, inf: total - used - inf,
     },
@@ -163,7 +163,7 @@ def simulate():
 
     # ── summary table per vendor ─────────────────────────────────
     print("─" * 80)
-    print(f"{'Vendor':<18} {'Total':>7} {'Changed':>9} {'%':>6} {'Regr.':>7} {'OK?':>5}")
+    print(f"{'Vendor':<24} {'Total':>7} {'Changed':>9} {'%':>6} {'Regr.':>7} {'OK?':>5}")
     print("─" * 80)
     grand_total = 0
     grand_changed = 0
@@ -186,11 +186,11 @@ def simulate():
         grand_regressions += r_val
         pct = c / t * 100 if t else 0
         vn = v["name"]
-        print(f"{vn:<18} {t:>7} {c:>9} {pct:>5.1f}% {r_val:>7} {ok:>5}")
+        print(f"{vn:<24} {t:>7} {c:>9} {pct:>5.1f}% {r_val:>7} {ok:>5}")
 
     print("─" * 80)
     gp = grand_changed / grand_total * 100 if grand_total else 0
-    print(f"{'TOTAL':<18} {grand_total:>7} {grand_changed:>9} {gp:>5.1f}% "
+    print(f"{'TOTAL':<24} {grand_total:>7} {grand_changed:>9} {gp:>5.1f}% "
           f"{grand_regressions:>7} {'YES' if grand_regressions == 0 else 'NO':>5}")
     print()
 
@@ -210,12 +210,12 @@ def simulate():
     print("─── Worst-case: Lumina2 (11.7 GB) + Qwen3 fp16 at 2048x2048 ───")
     worst = [r for r in rows if r[8] == 8.0 and r[2] == "Qwen3-4B fp16"
              and "Lumina2" in r[6] and r[1] not in ("MPS", "DML")]
-    print(f"  {'Vendor':<14} {'VRAM':>5} {'RAM':>5} {'FreeV':>6} {'FreeR':>6} "
+    print(f"  {'Vendor':<24} {'VRAM':>5} {'RAM':>5} {'FreeV':>6} {'FreeR':>6} "
           f"{'Orig':>5} {'Fix':>5} {'Δ'}")
-    print("  " + "-" * 54)
+    print("  " + "-" * 64)
     for r in sorted(worst, key=lambda x: (x[3], -x[4])):
         mark = " <" if r[-1] else ""
-        print(f"  {r[0]:<14} {r[4]:>5.0f} {r[5]:>5.0f} {r[9]:>6.1f} {r[10]:>6.0f} "
+        print(f"  {r[0]:<24} {r[4]:>5.0f} {r[5]:>5.0f} {r[9]:>6.1f} {r[10]:>6.0f} "
               f"{r[11]:>5} {r[12]:>5}{mark}")
     print()
 
@@ -225,8 +225,8 @@ def simulate():
     print(f"  DirectML get_free_memory() always returns 1 GB (hardcoded).")
     print(f"  Only models < {1/HEADROOM:.2f} GB can fit → all changed cases")
     print("  go from Original=GPU to Fixed=GPU (not actually changed).")
-    nvidia_changed = len(changed_rows("CUDA"))
-    print(f"  NVIDIA CUDA changed:  {nvidia_changed} cases (the real metric)")
+    cuda_changed = len(changed_rows("CUDA"))
+    print(f"  CUDA/ROCm (NVIDIA + AMD Linux) changed:  {cuda_changed} cases (the real metric)")
     print()
 
     # ── regression guard ─────────────────────────────────────────
@@ -238,7 +238,7 @@ def simulate():
                   f"{r[2]:20}  {r[6]:30}")
         print()
     else:
-        print("  ✅  Zero regressions across ALL vendors (CUDA/XPU/DML/NPU/MLU).")
+        print("  ✅  Zero regressions across ALL vendors (CUDA/ROCm/XPU/DML/NPU/MLU).")
         print("     Every change goes CPU → GPU.")
         print()
 
