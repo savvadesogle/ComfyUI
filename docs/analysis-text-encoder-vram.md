@@ -8,6 +8,8 @@ Fix for `comfy/model_management.py:1115` — function `text_encoder_initial_devi
 
 **The fix:** Remove the `mem_o` comparison entirely. The only remaining guard is `model_size * 1.2 < mem_l` — "does the model fit in VRAM with 20% headroom?"
 
+**TE** = text encoder. Used throughout this document.
+
 ## What changed
 
 ```diff

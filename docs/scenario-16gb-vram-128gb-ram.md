@@ -3,6 +3,8 @@
 A worked example showing how `text_encoder_initial_device()` behaves
 before and after the fix on a typical consumer GPU setup.
 
+**TE** = text encoder. Used throughout this document.
+
 ## Hardware assumptions
 
 | Component | Value |
