@@ -47,6 +47,7 @@ The `MultiGPUThreadPool` (Python threads, one per device) **does** parallelize w
 ## Performance (2× Intel Arc A770, Windows 11)
 
 Tested on Windows 11 with PyTorch 2.13.0.dev20260529+xpu.
+Hardware: 2× Intel Arc A770 on PCIe Gen3 x16, dual Xeon E5-2699v3 (each GPU on its own CPU socket).
 
 | Configuration | Steps | s/it (steady) | Total | Speedup |
 |---|---|---|---|---|
