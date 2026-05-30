@@ -10,10 +10,6 @@ On non-CUDA backends (Intel XPU, Huawei NPU, etc.) this crashes with:
 MultiGPUThreadPool: failed to set device xpu:0: Expected a cuda device, but got: xpu:0
 ```
 
-The original PR acknowledged this:
-
-> Intel (Arc XPU): Tested, does not work on Windows but works on Linux
-
 ## Fix
 
 ### `set_torch_device(device)` helper
@@ -54,7 +50,9 @@ Replaces the hardcoded `torch.cuda.set_device()` calls in:
 
 The `MultiGPUThreadPool` (Python threads, one per device) **does** parallelize work on XPU Windows — both GPUs run their forward passes concurrently. The thread pool is kept for all backends.
 
-## Performance (2× Intel Arc A770, Windows)
+## Performance (2× Intel Arc A770, Windows 11)
+
+Tested on Windows 11 with PyTorch 2.13.0.dev20260529+xpu.
 
 | Configuration | Steps | s/it (steady) | Total | Speedup |
 |---|---|---|---|---|
@@ -78,6 +76,3 @@ Contains two commits:
 1. `6030742f` — `set_torch_device()` helper: device-agnostic device switching
 2. `ae35e23c` — diagnostic logging for the multigpu code path
 
-## Linux vs Windows
-
-The fix resolves the `Expected cuda device` crash on both platforms. On Linux, XPU thread pool performance is expected to be better due to different SYCL driver behavior (per the PR author's testing).
