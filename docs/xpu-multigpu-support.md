@@ -4,7 +4,7 @@
 
 The MultiGPU CFG Split feature added in [PR #7063](https://github.com/Comfy-Org/ComfyUI/pull/7063) uses a `MultiGPUThreadPool` with `torch.cuda.set_device()` to assign worker threads to GPU devices.
 
-On non-CUDA backends (Intel XPU, Huawei NPU, etc.) this crashes with:
+On Intel XPU this crashes with:
 
 ```
 MultiGPUThreadPool: failed to set device xpu:0: Expected a cuda device, but got: xpu:0
@@ -22,12 +22,6 @@ def set_torch_device(device):
         torch.cuda.set_device(device)
     elif is_device_xpu(device):
         torch.xpu.set_device(device)
-    elif is_ascend_npu():
-        torch.npu.set_device(device)
-    elif is_mlu():
-        torch.mlu.set_device(device)
-    elif is_ixuca():
-        torch.corex.set_device(device)
     else:
         logging.debug(f"set_torch_device: no-op for device type '{device.type}'")
 ```
