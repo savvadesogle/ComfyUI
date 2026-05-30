@@ -122,30 +122,47 @@ A Python simulation is provided at [`docs/text_encoder_sim.py`](./text_encoder_s
 (full output at [`docs/simulation_results.txt`](./simulation_results.txt)) that
 exhaustively tests all combinations of:
 
+- **Vendors:** NVIDIA/CUDA, Intel XPU, AMD DirectML, Apple MPS, Ascend NPU, Cambricon MLU
 - **VRAM sizes:** 4, 6, 8, 12, 16, 20, 24, 32, 48 GB
 - **RAM sizes:** 8, 16, 32, 64, 96, 128, 256 GB
 - **Model sizes:** SD1.5 CLIP fp32 (1.3 GB), SDXL CLIP (2 GB), Qwen3 4B fp16 (7.6 GB),
   Qwen3 4B fp32 (15.2 GB), Llama 8B fp16 (15 GB), Flux text encoders (8.5 GB)
-- **Scenarios:** clean system, after loading a 7 GB diffusion model, after Lumina2
-  (11.7 GB), after a 15 GB model
+- **Scenarios:** clean, after loading a 7 GB diffusion model, after Lumina2 (11.7 GB),
+  after a 15 GB model
+- **Inference resolutions:** 512² (+0.5 GB), 1024² (+2 GB), 2048² (+8 GB), 4096² (+18 GB)
 
 Run it locally:
+```bash
+PYTHONIOENCODING=utf-8 python docs/text_encoder_sim.py
 ```
-python docs/text_encoder_sim.py
-```
 
-### Simulation results
+### Results by vendor
 
-| Metric                     | Value      |
-|----------------------------|-----------|
-| Total combinations tested  | 1092      |
-| Behaviour changed          | 382 (35.0 %) |
-| Original and fix agree     | 710       |
-| Regressions (GPU → CPU)    | **0** ✅  |
+| Vendor               | Total | Changed | %     | Regressions |
+|----------------------|-------|---------|-------|-------------|
+| NVIDIA / CUDA        | 2772  | 977     | 35.2% | **0** ✅    |
+| Intel XPU            | 2772  | 977     | 35.2% | **0** ✅    |
+| AMD DirectML         | 4536  | 0       | 0.0%  | **0** ✅    |
+| Apple MPS            | —     | —       | —     | n/a (early return) |
+| Ascend NPU           | 2772  | 977     | 35.2% | **0** ✅    |
+| Cambricon MLU        | 2772  | 977     | 35.2% | **0** ✅    |
+| **TOTAL**            | 15624 | 3908    | 25.0% | **0** ✅    |
 
-Every single changed case goes **CPU → GPU** — the fix only *improves* device placement,
-never degrades it. All 638 cases where original and fix agree include every scenario
-where the model does not fit in VRAM (stay CPU) or trivially fits (both say GPU).
+**AMD DirectML** shows 0 changes because `get_free_memory()` hardcodes
+1 GB — neither original nor fixed code ever places a text encoder > 0.8 GB
+on GPU. This is a pre-existing limitation unrelated to the fix.
+
+**Apple MPS** has an early `is_device_mps()` return that bypasses the
+check entirely — not affected.
+
+### By inference resolution
+
+| Inference overhead | Changed / Total | %     | Regressions |
+|-------------------|-----------------|-------|-------------|
+| +0.5 GB (512²)    | 1536 / 5544     | 27.7% | 0           |
+| +2.0 GB (1024²)   | 1388 / 5544     | 25.0% | 0           |
+| +8.0 GB (2048²)   | 800  / 3486     | 22.9% | 0           |
+| +18.0 GB (4096²)  | 184  / 1050     | 17.5% | 0           |
 
 ## Conclusion
 
