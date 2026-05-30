@@ -119,7 +119,8 @@ Slightly over the 1 GB threshold, this enters the `text_encoder_initial_device` 
 ## Automated simulation
 
 A Python simulation is provided at [`docs/text_encoder_sim.py`](./text_encoder_sim.py)
-(full output at [`docs/simulation_results.txt`](./simulation_results.txt)) that
+(full output at [`docs/simulation_results.txt`](./simulation_results.txt),
+unit tests at [`docs/test_text_encoder_device.py`](./test_text_encoder_device.py)) that
 exhaustively tests all combinations of:
 
 - **Vendors:** NVIDIA/CUDA, Intel XPU, AMD DirectML, Apple MPS, Ascend NPU, Cambricon MLU
@@ -134,6 +135,7 @@ exhaustively tests all combinations of:
 Run it locally:
 ```bash
 PYTHONIOENCODING=utf-8 python docs/text_encoder_sim.py
+PYTHONIOENCODING=utf-8 python -m pytest docs/test_text_encoder_device.py -v
 ```
 
 ### Results by vendor
