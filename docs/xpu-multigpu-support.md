@@ -61,7 +61,7 @@ The `MultiGPUThreadPool` (Python threads, one per device) **does** parallelize w
 | **1× A770** (no MultiGPU node) | 20 | 1.73–2.00 | 45–50s | 1× (baseline) |
 | **2× A770** (+ MultiGPU CFG Split) | 20 | **1.10** | **31–38s** | **~1.7×** |
 
-SDXL 1024×1024 → 2048×2048 (via SD Ultimate Upscale), CFG=7.
+Model: [SDXL base 1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) (`sd_xl_base_1.0.safetensors`), 1024×1024 → 2048×2048 (via SD Ultimate Upscale), CFG=7, 20 steps, Euler sampler.
 
 ## Branch
 
