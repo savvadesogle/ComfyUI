@@ -1,0 +1,81 @@
+# XPU MultiGPU Support
+
+## Problem
+
+The MultiGPU CFG Split feature added in [PR #7063](https://github.com/Comfy-Org/ComfyUI/pull/7063) uses a `MultiGPUThreadPool` with `torch.cuda.set_device()` to assign worker threads to GPU devices.
+
+On non-CUDA backends (Intel XPU, Huawei NPU, etc.) this crashes with:
+
+```
+MultiGPUThreadPool: failed to set device xpu:0: Expected a cuda device, but got: xpu:0
+```
+
+The original PR acknowledged this:
+
+> Intel (Arc XPU): Tested, does not work on Windows but works on Linux
+
+## Fix
+
+### `set_torch_device(device)` helper
+
+Added to `comfy/model_management.py`. Dispatches to the correct backend:
+
+```python
+def set_torch_device(device):
+    if is_device_cuda(device):
+        torch.cuda.set_device(device)
+    elif is_device_xpu(device):
+        torch.xpu.set_device(device)
+    elif is_ascend_npu():
+        torch.npu.set_device(device)
+    elif is_mlu():
+        torch.mlu.set_device(device)
+    elif is_ixuca():
+        torch.corex.set_device(device)
+    else:
+        logging.debug(f"set_torch_device: no-op for device type '{device.type}'")
+```
+
+Replaces the hardcoded `torch.cuda.set_device()` calls in:
+
+- `comfy/multigpu.py` — `MultiGPUThreadPool._worker_loop`
+- `comfy/samplers.py` — `_handle_batch` in `_calc_cond_batch_multigpu`
+
+## Thread Pool on XPU
+
+`torch.xpu` exposes the same primitives as `torch.cuda`:
+
+| Primitive | Available |
+|---|---|
+| `torch.xpu.set_device()` | ✅ |
+| `torch.xpu.synchronize()` | ✅ |
+| `torch.xpu.Stream` | ✅ |
+| `torch.xpu.current_device()` | ✅ |
+
+The `MultiGPUThreadPool` (Python threads, one per device) **does** parallelize work on XPU Windows — both GPUs run their forward passes concurrently. The thread pool is kept for all backends.
+
+## Performance (2× Intel Arc A770, Windows)
+
+| Configuration | Steps | s/it (steady) | Total | Speedup |
+|---|---|---|---|---|
+| **1× A770** (no MultiGPU node) | 20 | 1.73–2.00 | 45–50s | 1× (baseline) |
+| **2× A770** (+ MultiGPU CFG Split) | 20 | **1.10** | **31–38s** | **~1.7×** |
+
+SDXL 1024×1024 → 2048×2048 (via SD Ultimate Upscale), CFG=7.
+
+## Branch
+
+The fix is available in the `fix/xpu-multigpu-windows` branch:
+
+```
+https://github.com/savvadesogle/ComfyUI/tree/fix/xpu-multigpu-windows
+```
+
+Contains two commits:
+
+1. `6030742f` — `set_torch_device()` helper: device-agnostic device switching
+2. `ae35e23c` — diagnostic logging for the multigpu code path
+
+## Linux vs Windows
+
+The fix resolves the `Expected cuda device` crash on both platforms. On Linux, XPU thread pool performance is expected to be better due to different SYCL driver behavior (per the PR author's testing).
