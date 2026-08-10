@@ -85,9 +85,9 @@ _TYPES = {
 def load_safetensors(ckpt):
     import comfy_aimdo.model_mmap
 
-    f = open(ckpt, "rb", buffering=0)
     file_lock = threading.Lock()
     model_mmap = comfy_aimdo.model_mmap.ModelMMAP(ckpt)
+    f = model_mmap.get_file_handle()
     file_size = os.path.getsize(ckpt)
     mv = memoryview((ctypes.c_uint8 * file_size).from_address(model_mmap.get()))
 
@@ -818,6 +818,44 @@ def z_image_to_diffusers(mmdit_config, output_prefix=""):
 
     return key_map
 
+def krea2_to_diffusers(mmdit_config, output_prefix=""):
+    n_layers = mmdit_config.get("layers", 0)
+    n_txt_layerwise = 2  # TextFusionTransformer hardcodes 2 layerwise + 2 refiner blocks
+    n_txt_refiner = 2
+    key_map = {}
+
+    def add_block(prefix_to, prefix_from):
+        block_map = {
+            "attn.to_q": "attn.wq", "attn.to_k": "attn.wk", "attn.to_v": "attn.wv",
+            "attn.to_gate": "attn.gate", "attn.to_out.0": "attn.wo",
+            "attn.to_out": "attn.wo",  # some tools drop the ".0" on to_out
+            "ff.gate": "mlp.gate", "ff.up": "mlp.up", "ff.down": "mlp.down",
+        }
+        for d, c in block_map.items():
+            key_map["{}.{}.weight".format(prefix_to, d)] = "{}{}.{}.weight".format(output_prefix, prefix_from, c)
+
+    for i in range(n_layers):
+        add_block("transformer_blocks.{}".format(i), "blocks.{}".format(i))
+    for i in range(n_txt_layerwise):
+        add_block("text_fusion.layerwise_blocks.{}".format(i), "txtfusion.layerwise_blocks.{}".format(i))
+    for i in range(n_txt_refiner):
+        add_block("text_fusion.refiner_blocks.{}".format(i), "txtfusion.refiner_blocks.{}".format(i))
+
+    MAP_BASIC = [
+        ("img_in", "first"),
+        ("time_embed.linear_1", "tmlp.0"),
+        ("time_embed.linear_2", "tmlp.2"),
+        ("time_mod_proj", "tproj.1"),
+        ("txt_in.linear_1", "txtmlp.1"),
+        ("txt_in.linear_2", "txtmlp.3"),
+        ("text_fusion.projector", "txtfusion.projector"),
+        ("final_layer.linear", "last.linear"),
+    ]
+    for d, c in MAP_BASIC:
+        key_map["{}.weight".format(d)] = "{}{}.weight".format(output_prefix, c)
+
+    return key_map
+
 def repeat_to_batch_size(tensor, batch_size, dim=0):
     if tensor.shape[dim] > batch_size:
         return tensor.narrow(dim, 0, batch_size)
@@ -1452,3 +1490,10 @@ def deepcopy_list_dict(obj, memo=None):
 
     memo[obj_id] = res
     return res
+
+def bit_reverse_range(index, bits):
+    result = 0
+    for _ in range(bits):
+        result = (result << 1) | (index & 1)
+        index >>= 1
+    return result

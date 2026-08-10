@@ -34,6 +34,7 @@ import comfy.utils
 import comfy.quant_ops
 import comfy_aimdo.host_buffer
 import comfy_aimdo.vram_buffer
+from comfy.internal_logging import detail
 
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
@@ -473,7 +474,7 @@ except:
 
 SUPPORT_FP8_OPS = args.supports_fp8_compute
 
-AMD_RDNA2_AND_OLDER_ARCH = ["gfx1030", "gfx1031", "gfx1010", "gfx1011", "gfx1012", "gfx906", "gfx900", "gfx803"]
+AMD_RDNA2_AND_OLDER_ARCH = ["gfx1030", "gfx1031", "gfx1035", "gfx1010", "gfx1011", "gfx1012", "gfx906", "gfx900", "gfx803"]
 AMD_ENABLE_MIOPEN_ENV = 'COMFYUI_ENABLE_MIOPEN'
 
 try:
@@ -534,8 +535,10 @@ try:
 except:
     pass
 
-if torch.cuda.is_available() and torch.backends.cudnn.is_available() and PerformanceFeature.AutoTune in args.fast:
-    torch.backends.cudnn.benchmark = True
+
+def set_cudnn_benchmark():
+    if torch.cuda.is_available() and torch.backends.cudnn.is_available():
+        torch.backends.cudnn.benchmark = PerformanceFeature.AutoTune in args.fast
 
 try:
     if torch_version_numeric >= (2, 5):
@@ -614,6 +617,8 @@ PIN_PRESSURE_HYSTERESIS = 256 * 1024 * 1024
 #Freeing registerables on pressure does imply a GPU sync, so go big on
 #the hysteresis so each expensive sync gives us back a good chunk.
 REGISTERABLE_PIN_HYSTERESIS = 2048 * 1024 * 1024
+WINDOWS_PIN_EVICTION_SWAP_PERCENT = 5.0
+WINDOWS_PIN_EVICTION_EMERGENCY_AVAILABLE = 512 * 1024 ** 2
 
 def module_size(module):
     module_mem = 0
@@ -628,41 +633,102 @@ def mark_mmap_dirty(storage):
     if mmap_refs is not None:
         DIRTY_MMAPS.add(mmap_refs[0])
 
-def free_pins(size, evict_active=False):
+PIN_SUBSETS = [ "weights", "patches" ]
+LOADED_PIN_SUBSETS = [ "weights-loaded", "patches-loaded" ]
+
+def models_for_pin_eviction(active, current_prompt=None):
+    for loaded_model in current_loaded_models:
+        model = loaded_model.model
+        if model is None or not model.is_dynamic():
+            continue
+        pin_state = model.model.dynamic_pins[model.load_device]
+        if ((active is None or pin_state["active"] == active) and
+            (current_prompt is None or pin_state["current_prompt"] == current_prompt)):
+            yield model
+
+def free_model_pins(size, subsets, current_prompt, active, registrations=False):
     freed_total = 0
-    for loaded_model in reversed(current_loaded_models):
+    for model in models_for_pin_eviction(active, current_prompt=current_prompt):
         if size <= 0:
             return freed_total
-        model = loaded_model.model
-        if model is not None and model.is_dynamic() and (evict_active or not model.model.dynamic_pins[model.load_device]["active"]):
-            freed = model.partially_unload_ram(size)
-            freed_total += freed
-            size -= freed
+        if registrations:
+            freed = model.unregister_inactive_pins(size, subsets=subsets)
+        else:
+            freed = model.partially_unload_ram(size, subsets=subsets)
+        freed_total += freed
+        size -= freed
     return freed_total
 
-def ensure_pin_budget(size, evict_active=False):
-    shortfall = size + comfy.memory_management.RAM_CACHE_HEADROOM / 2 - psutil.virtual_memory().available
+def pin_eviction_tiers(loaded, evict_active):
+    tiers = [
+        (PIN_SUBSETS, False, None),
+        (LOADED_PIN_SUBSETS, False, None),
+        (LOADED_PIN_SUBSETS, True, None),
+    ]
+    if not loaded:
+        tiers.append((PIN_SUBSETS, True, False))
+        if evict_active:
+            tiers.append((PIN_SUBSETS, True, True))
+    return tiers
+
+def registration_eviction_tiers(evict_active):
+    subsets = PIN_SUBSETS + LOADED_PIN_SUBSETS
+    tiers = [
+        (subsets, False, False),
+        (subsets, True, False),
+    ]
+    if evict_active:
+        tiers.extend([
+            (subsets, False, True),
+            (subsets, True, True),
+        ])
+    return tiers
+
+def free_pins(size, evict_active=False, loaded=False):
+    freed = 0
+    for subsets, current_prompt, active in pin_eviction_tiers(loaded, evict_active):
+        freed += free_model_pins(size - freed, subsets, current_prompt, active)
+    return freed
+
+def should_free_pins_for_ram_pressure(shortfall):
+    if shortfall <= 0:
+        return False
+    if not WINDOWS:
+        return True
+    if psutil.virtual_memory().available < WINDOWS_PIN_EVICTION_EMERGENCY_AVAILABLE:
+        return True
+    try:
+        return psutil.swap_memory().percent >= WINDOWS_PIN_EVICTION_SWAP_PERCENT
+    except RuntimeError as err:
+        logging.warning("Could not read Windows swap usage; falling back to RAM-pressure pin eviction: %s", err)
+        return True
+
+def ensure_pin_budget(size, evict_active=False, loaded=False):
+    if args.high_ram:
+        return True
+    if args.fast_disk:
+        shortfall = TOTAL_PINNED_MEMORY + size - MAX_PINNED_MEMORY
+    else:
+        shortfall = size + max(comfy.memory_management.RAM_CACHE_HEADROOM / 2, 2048 * 1024 ** 2) - psutil.virtual_memory().available
     if shortfall <= 0:
         return True
 
     to_free = shortfall + PIN_PRESSURE_HYSTERESIS
-    return free_pins(to_free, evict_active=evict_active) >= shortfall
+    return free_pins(to_free, evict_active=evict_active, loaded=loaded) >= shortfall
 
-def ensure_pin_registerable(size, evict_active=False):
-    shortfall = TOTAL_PINNED_MEMORY + size - MAX_PINNED_MEMORY
+def free_registrations(shortfall, evict_active=True):
     if MAX_PINNED_MEMORY <= 0:
         return False
     if shortfall <= 0:
         return True
 
     shortfall += REGISTERABLE_PIN_HYSTERESIS
-    for loaded_model in reversed(current_loaded_models):
-        model = loaded_model.model
-        if model is not None and model.is_dynamic() and (evict_active or not model.model.dynamic_pins[model.load_device]["active"]):
-            shortfall -= model.unregister_inactive_pins(shortfall)
-            if shortfall <= 0:
-                return True
+    for subsets, current_prompt, active in registration_eviction_tiers(evict_active):
+        shortfall -= free_model_pins(shortfall, subsets, current_prompt, active, registrations=True)
     return shortfall <= REGISTERABLE_PIN_HYSTERESIS
+
+def ensure_pin_registerable(size, evict_active=True):
+    return free_registrations(TOTAL_PINNED_MEMORY + size - MAX_PINNED_MEMORY, evict_active=evict_active)
 
 class LoadedModel:
     def __init__(self, model: ModelPatcher):
@@ -788,6 +854,8 @@ def minimum_inference_memory():
 
 def free_memory(memory_required, device, keep_loaded=[], for_dynamic=False, pins_required=0, ram_required=0):
     cleanup_models_gc()
+    if not for_dynamic:
+        detail("Non dynamic memory free called! memory_required=%s pins_required=%s ram_required=%s", memory_required, pins_required, ram_required)
     unloaded_model = []
     can_unload = []
     unloaded_models = []
@@ -803,9 +871,9 @@ def free_memory(memory_required, device, keep_loaded=[], for_dynamic=False, pins
     for x in can_unload_sorted:
         i = x[-1]
         memory_to_free = 1e32
-        if current_loaded_models[i].model.is_dynamic() and (not DISABLE_SMART_MEMORY or device is None):
+        if not DISABLE_SMART_MEMORY or device is None:
             memory_to_free = 0 if device is None else memory_required - get_free_memory(device)
-            if for_dynamic:
+            if current_loaded_models[i].model.is_dynamic() and for_dynamic:
                 #don't actually unload dynamic models for the sake of other dynamic models
                 #as that works on-demand.
                 memory_required -= current_loaded_models[i].model.loaded_size()
@@ -816,6 +884,10 @@ def free_memory(memory_required, device, keep_loaded=[], for_dynamic=False, pins
 
     for i in sorted(unloaded_model, reverse=True):
         unloaded_models.append(current_loaded_models.pop(i))
+
+    if not for_dynamic and pins_required > 0:
+        ensure_pin_budget(pins_required)
+        ensure_pin_registerable(pins_required)
 
     if len(unloaded_model) > 0:
         soft_empty_cache()
@@ -879,15 +951,19 @@ def load_models_gpu(models, memory_required=0, force_patch_weights=False, minimu
             model_to_unload.model_finalizer.detach()
 
     total_memory_required = {}
+    total_pins_required = {}
     for loaded_model in models_to_load:
         device = loaded_model.device
         total_memory_required[device] = total_memory_required.get(device, 0) + loaded_model.model_memory_required(device)
+        if not loaded_model.model.is_dynamic():
+            total_pins_required[device] = total_pins_required.get(device, 0) + loaded_model.model_memory()
 
     for device in total_memory_required:
         if device != torch.device("cpu"):
             free_memory(total_memory_required[device] * 1.1 + extra_mem,
                         device,
-                        for_dynamic=free_for_dynamic)
+                        for_dynamic=free_for_dynamic,
+                        pins_required=total_pins_required.get(device, 0))
 
     for device in total_memory_required:
         if device != torch.device("cpu"):
@@ -918,6 +994,9 @@ def load_models_gpu(models, memory_required=0, force_patch_weights=False, minimu
             lowvram_model_memory = 0.1
 
         loaded_model.model_load(lowvram_model_memory, force_patch_weights=force_patch_weights)
+        vram_used = 0 if is_device_cpu(torch_dev) else loaded_model.model_loaded_memory()
+        ram_used = model.loaded_ram_size() if model.is_dynamic() else loaded_model.model_memory() - vram_used
+        detail("Model loaded: patcher=%s model=%s ram_mb=%.1f vram_mb=%.1f", model.__class__.__name__, model.model.__class__.__name__, ram_used / (1024 ** 2), vram_used / (1024 ** 2))
         current_loaded_models.insert(0, loaded_model)
     return
 
@@ -937,8 +1016,6 @@ def loaded_models(only_currently_used=False):
 
 def cleanup_models_gc():
     do_gc = False
-
-    reset_cast_buffers()
 
     for i in range(len(current_loaded_models)):
         cur = current_loaded_models[i]
@@ -1283,7 +1360,6 @@ STREAM_CAST_BUFFERS = {}
 LARGEST_CASTED_WEIGHT = (None, 0)
 STREAM_AIMDO_CAST_BUFFERS = {}
 LARGEST_AIMDO_CASTED_WEIGHT = (None, 0)
-STREAM_PIN_BUFFERS = {}
 
 DEFAULT_AIMDO_CAST_BUFFER_RESERVATION_SIZE = 16 * 1024 ** 3
 
@@ -1326,42 +1402,13 @@ def get_aimdo_cast_buffer(offload_stream, device):
         STREAM_AIMDO_CAST_BUFFERS[offload_stream] = cast_buffer
     return cast_buffer
 
-def get_pin_buffer(offload_stream):
-    pin_buffer = STREAM_PIN_BUFFERS.get(offload_stream, None)
-    if pin_buffer is None:
-        pin_buffer = comfy_aimdo.host_buffer.HostBuffer(0, 0, pinned_hostbuf_size(8 * 1024**3), mark_cold=False)
-        STREAM_PIN_BUFFERS[offload_stream] = pin_buffer
-    elif offload_stream is not None:
-        event = getattr(pin_buffer, "_comfy_event", None)
-        if event is not None:
-            event.synchronize()
-            delattr(pin_buffer, "_comfy_event")
-    return pin_buffer
-
-def resize_pin_buffer(pin_buffer, size):
-    global TOTAL_PINNED_MEMORY
-    old_size = pin_buffer.size
-    if size <= old_size:
-        return True
-    growth = size - old_size
-    comfy.memory_management.extra_ram_release(comfy.memory_management.RAM_CACHE_HEADROOM)
-    ensure_pin_budget(growth, evict_active=True)
-    ensure_pin_registerable(growth, evict_active=True)
-    try:
-        pin_buffer.extend(size=size, reallocate=True)
-    except RuntimeError:
-        return False
-    TOTAL_PINNED_MEMORY += pin_buffer.size - old_size
-    return True
-
 def reset_cast_buffers():
-    global TOTAL_PINNED_MEMORY
     global LARGEST_CASTED_WEIGHT
     global LARGEST_AIMDO_CASTED_WEIGHT
 
     LARGEST_CASTED_WEIGHT = (None, 0)
     LARGEST_AIMDO_CASTED_WEIGHT = (None, 0)
-    for offload_stream in set(STREAM_CAST_BUFFERS) | set(STREAM_AIMDO_CAST_BUFFERS) | set(STREAM_PIN_BUFFERS):
+    for offload_stream in set(STREAM_CAST_BUFFERS) | set(STREAM_AIMDO_CAST_BUFFERS):
         if offload_stream is not None:
             offload_stream.synchronize()
     synchronize()
@@ -1370,20 +1417,26 @@ def reset_cast_buffers():
         mmap_obj.bounce()
     DIRTY_MMAPS.clear()
 
-    for pin_buffer in STREAM_PIN_BUFFERS.values():
-        TOTAL_PINNED_MEMORY -= pin_buffer.size
-    TOTAL_PINNED_MEMORY = max(0, TOTAL_PINNED_MEMORY)
-
     for loaded_model in current_loaded_models:
         model = loaded_model.model
         if model is not None and model.is_dynamic():
-            model.model.dynamic_pins[model.load_device]["active"] = False
-            model.partially_unload_ram(1e30, subsets=[ "patches" ])
-            model.model.dynamic_pins[model.load_device]["patches"] = (comfy_aimdo.host_buffer.HostBuffer(0, 8 * 1024 * 1024, pinned_hostbuf_size(model.model_size())), [], [-1], [0])
+            pin_state = model.model.dynamic_pins[model.load_device]
+
+            if pin_state["active"]:
+                for subset in ("weights", "weights-loaded"):
+                    *_, buckets = pin_state[subset]
+                    for size, bucket in list(buckets.items()):
+                        bucket[:] = [ entry for entry in bucket if entry[-1] is not None ]
+                        if not bucket:
+                            del buckets[size]
+
+            pin_state["active"] = False
+            model.partially_unload_ram(1e30, subsets=[ "patches", "patches-loaded" ])
+            for subset in ("patches", "patches-loaded"):
+                pin_state[subset] = (comfy_aimdo.host_buffer.HostBuffer(0, 8 * 1024 * 1024, pinned_hostbuf_size(model.model_size())), [], [-1], [0], [0], {})
 
     STREAM_CAST_BUFFERS.clear()
     STREAM_AIMDO_CAST_BUFFERS.clear()
-    STREAM_PIN_BUFFERS.clear()
     soft_empty_cache()
 
 def get_offload_stream(device):
@@ -1436,7 +1489,7 @@ def cast_to_gathered(tensors, r, non_blocking=False, stream=None, r2=None):
        if hasattr(wf_context, "as_context"):
            wf_context = wf_context.as_context(stream)
 
-    dest_views = comfy.memory_management.interpret_gathered_like(tensors, r)
+    dest_views = comfy.memory_management.interpret_gathered_like(tensors, r) if r is not None else [None] * len(tensors)
     dest2_views = comfy.memory_management.interpret_gathered_like(tensors, r2) if r2 is not None else None
     with wf_context:
         for tensor in tensors:
@@ -1448,9 +1501,10 @@ def cast_to_gathered(tensors, r, non_blocking=False, stream=None, r2=None):
                 continue
             storage = tensor._qdata.untyped_storage() if isinstance(tensor, comfy.quant_ops.QuantizedTensor) else tensor.untyped_storage()
             mark_mmap_dirty(storage)
-            dest_view.copy_(tensor, non_blocking=non_blocking)
+            if dest_view is not None:
+                dest_view.copy_(tensor, non_blocking=non_blocking)
             if dest2_view is not None:
-                dest2_view.copy_(dest_view, non_blocking=non_blocking)
+                dest2_view.copy_(tensor if dest_view is None else dest_view, non_blocking=non_blocking)
 
 
 def cast_to(weight, dtype=None, device=None, non_blocking=False, copy=False, stream=None, r=None):
@@ -1489,18 +1543,38 @@ def cast_to_device(tensor, device, dtype, copy=False):
 PINNED_MEMORY = {}
 TOTAL_PINNED_MEMORY = 0
 MAX_PINNED_MEMORY = -1
+
+def get_disk_swap_total():
+    if not os.path.exists("/proc/swaps"):
+        return 0
+
+    total = 0
+    try:
+        with open("/proc/swaps", encoding="utf-8") as swaps:
+            next(swaps, None)
+            for line in swaps:
+                filename, _, size, _, _ = line.rsplit(maxsplit=4)
+                if os.path.basename(os.path.realpath(filename)).startswith("zram"):
+                    continue
+                total += int(size) * 1024
+    except:
+        logging.warning("Could not get amount of swap memory on system.")
+    return total
+
 if not args.disable_pinned_memory:
     if is_nvidia() or is_amd():
         ram = get_total_memory(torch.device("cpu"))
         if WINDOWS:
             MAX_PINNED_MEMORY = ram * 0.40  # Windows limit is apparently 50%
         else:
-            MAX_PINNED_MEMORY = ram * 0.90
+            MAX_PINNED_MEMORY = max(ram * 0.40, min(ram * 0.90, ram - 4 * 1024 ** 3, ram + get_disk_swap_total() - 16 * 1024 ** 3))
         logging.info("Enabled pinned memory {}".format(MAX_PINNED_MEMORY // (1024 * 1024)))
 
 PINNING_ALLOWED_TYPES = set(["Tensor", "Parameter", "QuantizedTensor"])
 
 def pinned_hostbuf_size(size):
+    if args.high_ram:
+        return max(0, int(size * 2))
     return max(0, int(min(size, MAX_PINNED_MEMORY) * 2))
 
 def discard_cuda_async_error():
@@ -1722,6 +1796,13 @@ def is_device_xpu(device):
 
 def is_device_cuda(device):
     return is_device_type(device, 'cuda')
+
+def set_torch_device(device):
+    """Set the current device for the given torch device. Supports CUDA and XPU."""
+    if is_device_cuda(device):
+        torch.cuda.set_device(device)
+    elif is_device_xpu(device):
+        torch.xpu.set_device(device)
 
 def is_directml_enabled():
     global directml_enabled
